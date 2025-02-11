@@ -50,7 +50,7 @@
 
         .boxes {
           width: 40%;
-          height: 120px;
+          height: 125px;
           float: left;
           margin: 3% 2%;
 
@@ -82,12 +82,10 @@
 
             h4 {
               font-size: 18px;
-              padding: 5px;
               font-weight: bold;
             }
             h6 {
               font-size: 13px;
-              margin-top: -5px;
               line-height: 20px;
               color: gray;
               font-weight: 500;
@@ -141,12 +139,11 @@
     .card_area {
       width: 80%;
       height: calc(100% - 100px);
-      float: left;
       margin-left: 10%;
-      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
 
       .card {
-        height: auto;
         float: left;
         margin: 1%;
         background-color: rgb(248, 248, 248);
@@ -157,6 +154,16 @@
           background-color: #00d084;
           color: white;
           border: none;
+        }
+        .card-title {
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+        .card-text {
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          color: gray;
         }
       }
       .card:hover {
@@ -200,6 +207,336 @@
       width: 80%;
       height: calc(100% - 150px);
       margin-left: 10%;
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+
+      .card {
+        width: 19rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+
+        mat-icon {
+          width: 50px;
+          height: 50px;
+          background-color: rgb(248, 248, 248);
+          text-align: center;
+          color: #00b36b;
+          line-height: 60px;
+          font-size: 2.5rem;
+        }
+
+        .card-title {
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 25px;
+        }
+        .card-text {
+          line-height: 30px;
+        }
+      }
+      .card:hover {
+        color: #00b36b;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+
+    &.active {
+      background: #00d37f;
+      color: white;
+    }
+
+    &:hover {
+      background: #00b36b;
+      color: white;
+    }
+  }
+}
+
+.benifits {
+  width: 100%;
+  margin-top: 40px;
+
+  .buttons {
+    width: 50%;
+
+    button {
+      border-radius: 2rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 80%;
+
+    img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .text {
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #666;
+      }
+    }
+  }
+}
+
+.faq_area {
+  width: 100%;
+  height: auto;
+  float: left;
+
+  .faq_title {
+    width: 100%;
+    height: 50px;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    margin-top: 60px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+  .question_area {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+
+    .accordion {
+      width: 70%;
+      margin-left: 15%;
+
+      button {
+        height: 60px;
+      }
+    }
+  }
+  .image_area {
+    width: 50%;
+    height: 550px;
+    float: left;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+}
+.our_products {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    width: 100%;
+    height: auto;
+
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 45px;
+    }
+    h6 {
+      text-align: center;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .image-scrolling {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+}
+
+.our_team {
+  width: 100%;
+  height: 400px;
+  float: left;
+  margin-top: 50px;
+
+  .team_title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 1.3rem;
+      color: #00b36b;
+    }
+    h1 {
+      font-weight: bold;
+      margin-top: -15px;
+      font-size: 2rem;
+    }
+    h6 {
+      line-height: 25px;
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+    }
+  }
+  .team_card_area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .team_card {
+      width: 250px;
+      height: 340px;
+      background-color: whitesmoke;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      overflow: hidden;
+      transition: 0.5s;
+      margin-bottom: 20px;
+
+      .profile_img {
+        width: 100%;
+        height: 50%;
+        // background-color: #00b36b;
+        // z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          z-index: 5;
+          border: 3px dashed #00b36b;
+          padding: 3px;
+          transition: 1s;
+        }
+      }
+      .details {
+        width: 100%;
+        height: calc(100% - 50%);
+        z-index: 5;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        h4{
+          color: rgb(97, 97, 97);
+          margin-top: -20px;
+        }
+
+        .links {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+
+          span{
+            width: 30px;
+            height: 30px;
+            background-color: #00b36b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: 0.5s;
+          }
+        }
+      }
+      .overflow {
+        width: 100%;
+        height: 250px;
+        background-color: #00b36b;
+        transition: 0.5s;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        // z-index: 10;
+      }
+    }
+    .team_card:hover {
+      cursor: pointer;
+      .overflow {
+        margin-top: -250px;
+      }
+      .profile_img {
+        img {
+          border: 3px dashed whitesmoke;
+        }
+      }
+      .details{
+        color: white;
+
+        h4{
+          color: white;
+        }
+
+       .links{
+
+        span{
+          background-color: white;
+          color: black;
+        }
+        span:hover{
+          background-color: black;
+          color: #00b36b;
+        }
+       }
+      }
     }
   }
 }
