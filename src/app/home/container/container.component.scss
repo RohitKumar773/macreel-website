@@ -1,6 +1,7 @@
 .containers {
   width: 100%;
   overflow: hidden;
+  // margin-top: 120px;
 
   #carouselExampleCaptions {
     width: 100%;
@@ -31,6 +32,7 @@
         h1 {
           font-weight: bold;
           font-size: 30px;
+          line-height: 40px;
         }
         h6 {
           font-weight: 400;
@@ -43,16 +45,15 @@
         }
       }
       .box_content_area {
-        width: 90%;
+        width: 100%;
         height: auto;
         float: left;
-        margin-left: 8%;
 
         .boxes {
-          width: 40%;
+          width: 50%;
           height: 125px;
           float: left;
-          margin: 3% 2%;
+          margin-top: 20px;
 
           .icon_area {
             width: 30%;
@@ -65,7 +66,7 @@
               width: auto;
               height: auto;
               color: #00d084;
-              font-size: 40px;
+              font-size: 50px;
             }
           }
           button {
@@ -81,14 +82,14 @@
             height: 50px;
 
             h4 {
-              font-size: 18px;
-              font-weight: bold;
+              font-size: 25px;
+              font-weight: 500;
+              color: black;
             }
             h6 {
-              font-size: 13px;
-              line-height: 20px;
+              font-size: 15px;
+              line-height: 22px;
               color: gray;
-              font-weight: 500;
             }
           }
         }
@@ -392,7 +393,7 @@
 
 .our_team {
   width: 100%;
-  height: 400px;
+  height: auto;
   float: left;
   margin-top: 50px;
 
@@ -437,14 +438,12 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       overflow: hidden;
-      transition: 0.5s;
+      transition: 1s all;
       margin-bottom: 20px;
 
       .profile_img {
         width: 100%;
         height: 50%;
-        // background-color: #00b36b;
-        // z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -469,11 +468,11 @@
         flex-direction: column;
         align-items: center;
 
-        h1{
-          font-weight: 600;
+        h1 {
+          font-weight: 500;
           font-size: 1.2rem;
         }
-        h4{
+        h4 {
           color: rgb(97, 97, 97);
           margin-top: -20px;
         }
@@ -485,27 +484,30 @@
           gap: 10px;
           justify-content: center;
 
-          span{
+          span {
             width: 30px;
             height: 30px;
-            background-color: #00b36b;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             transition: 0.5s;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
       .overflow {
         width: 100%;
         height: 250px;
-        background-color: #00b36b;
+        background-color: #17303b;
         transition: 0.5s;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
-        // z-index: 10;
       }
     }
     .team_card:hover {
@@ -518,25 +520,42 @@
           border: 3px dashed whitesmoke;
         }
       }
-      .details{
+      .details {
         color: white;
 
-        h4{
+        h4 {
           color: white;
         }
-
-       .links{
-
-        span{
-          background-color: white;
-          color: black;
-        }
-        span:hover{
-          background-color: black;
-          color: #00b36b;
-        }
-       }
       }
     }
+  }
+}
+
+.trending_technology {
+  width: 100%;
+  height: 400px;
+  float: left;
+  margin-top: 40px;
+
+  .tech_title {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    h6 {
+      line-height: 25px;
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+    }
+  }
+  .sliding_area {
+    width: 100%;
+    height: calc(100% - 150px);
   }
 }

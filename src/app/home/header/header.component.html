@@ -40,37 +40,37 @@
     </div>
 
     <div class="drop-downs">
-      <img src="assets/home.gif" alt="" />
-      <span>Home</span>
+      <img src="assets/home.gif" alt="home" (click)="scrollOnHome()"/>
+      <span routerLink="/home">Home</span>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/about.gif" alt="" />
-      <span>About</span>
+      <img src="assets/about.gif" alt="" (click)="scrollOnAbout()"/>
+      <span routerLink="/home/pages">About</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li>Director Message</li>
-          <li>Our Team</li>
-          <li>Organization Structure</li>
-          <li>Vision & Mission</li>
+          <li (click)="scrollOnDirector()">Director Message</li>
+          <li (click)="scrollOnTeam()">Our Team</li>
+          <li (click)="scrollOnOrganization()">Organization Structure</li>
+          <li (click)="scrollOnVision()">Vision & Mission</li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/website.gif" alt="" />
-      <span>Web Designing</span>
+      <img src="assets/website.gif" alt=""(click)="scrollOnWebdesign()"/>
+      <span (click)="scrollOnWebdesign()">Web Designing</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li>E - Commerce Web Designing</li>
-          <li>Responsive Web Designing</li>
-          <li>Static Web Designing</li>
-          <li>Dynamic Web Designing</li>
-          <li>Custom Web Designing</li>
-          <li>Website Redesigning</li>
-          <li>SEO Web Designing</li>
+          <li (click)="scrollOnEcommerce()">E - Commerce Web Designing</li>
+          <li (click)="scrollOnResponsiveWeb()">Responsive Web Designing</li>
+          <li (click)="scrollOnStaticWeb()">Static Web Designing</li>
+          <li (click)="scrollOnDynamicWeb()">Dynamic Web Designing</li>
+          <li (click)="scrollOnCustomWeb()">Custom Web Designing</li>
+          <li (click)="scrollOnReesign()">Website Redesigning</li>
+          <li (click)="scrollOnSeoWeb()">SEO Web Designing</li>
         </ul>
       </div>
     </div>
@@ -144,12 +144,12 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs" routerLink="/home/pages/blogs">
       <img src="assets/blog.gif" alt="" />
       <span>Blog</span>
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs" routerLink="/home/pages/contact">
       <img src="assets/contact.gif" alt="" />
       <span>Contact US</span>
     </div>
