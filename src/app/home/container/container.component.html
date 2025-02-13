@@ -1,5 +1,5 @@
 <div class="containers">
-  <div id="carouselExampleCaptions" class="carousel slide">
+  <!-- <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button
         type="button"
@@ -57,12 +57,49 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
+
+  <swiper
+    [spaceBetween]="10"
+    [centeredSlides]="true"
+    [autoplay]="{ delay: 8000, disableOnInteraction: false }"
+    [pagination]="{ clickable: true, dynamicBullets: true }"
+    [grabCursor]="true"
+    [loop]="true"
+    class="sliderBox"
+  >
+    <ng-template swiperSlide>
+      <div class="text">
+        <h3>Welcome to Macreel Infosoft</h3>
+        <h1>Software and Web Development Services</h1>
+        <h5>
+          One stop solution for your business need! We help your business grow
+          with great websites, <br />
+          software, apps, and digital marketing. We're here only for you
+        </h5>
+        <button mat-raised-button (click)="openEnquiryForm()">Enquiry</button>
+      </div>
+      <img src="../../../assets/carousel-3.webp" alt="Slider image" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="text">
+        <h3>Digital Marketing Services</h3>
+        <h1>Success start here — let's make it happen together!</h1>
+        <h5>
+          We'll make sure your business stands out, reaches the right audience
+          and drives real results. <br />
+          Let the world see your brand shine across all platforms.
+        </h5>
+        <button mat-raised-button (click)="openEnquiryForm()">Enquiry</button>
+      </div>
+      <img src="../../../assets/carousel-4.webp" alt="Slider image" />
+    </ng-template>
+  </swiper>
 
   <!-- year of experience code start here  -->
   <div class="experience">
     <div class="contents">
-      <div class="title_content">
+      <div class="title_content" data-aos="fade-right" data-aos-duration="1000">
         <h1>
           The Best IT Solution With 12+ <br />
           Years of Experience
@@ -86,7 +123,7 @@
         </h6>
       </div>
       <div class="box_content_area">
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-left" data-aos-duration="1000">
           <div class="icon_area">
             <mat-icon>wb_incandescent</mat-icon>
           </div>
@@ -98,7 +135,7 @@
             </h6>
           </div>
         </div>
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
           <div class="icon_area">
             <mat-icon>people</mat-icon>
           </div>
@@ -110,7 +147,7 @@
             </h6>
           </div>
         </div>
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-left" data-aos-duration="1000">
           <div class="icon_area">
             <mat-icon> business</mat-icon>
           </div>
@@ -122,7 +159,7 @@
             </h6>
           </div>
         </div>
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
           <div class="icon_area">
             <mat-icon>headset_mic</mat-icon>
           </div>
@@ -134,7 +171,7 @@
             </h6>
           </div>
         </div>
-        <div class="boxes">
+        <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
           <div class="icon_area">
             <mat-icon> monetization_on</mat-icon>
           </div>
@@ -151,7 +188,12 @@
         </div>
       </div>
     </div>
-    <div class="contents" id="image_content">
+    <div
+      class="contents"
+      id="image_content"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
       <img
         src="assets/aboutus.webp"
         alt="macreel-infosoft-about"
@@ -167,8 +209,8 @@
 
   <div class="services">
     <div class="service_title">
-      <h1>Best IT Services in Noida, India</h1>
-      <h4>
+      <h1 data-aos="fade-right">Best IT Services in Noida, India</h1>
+      <h4 data-aos="fade-down-left">
         At Macreel Infosoft Pvt. Ltd, we are committed to transforming your
         digital dreams into reality. <br />
         Our diverse range of services is designed to meet the unique needs of
@@ -176,7 +218,7 @@
       </h4>
     </div>
     <div class="card_area">
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="fade-down">
         <img src="assets/webdesign.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Website Designing</h5>
@@ -189,7 +231,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="zoom-out">
         <img
           src="assets/website-development.gif"
           class="card-img-top"
@@ -206,7 +248,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="zoom-out">
         <img src="assets/software-dev.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Software Development</h5>
@@ -219,7 +261,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="fade-down-right">
         <img src="assets/mobileapp.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Mobile App Development</h5>
@@ -232,7 +274,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="fade-down-right">
         <img
           src="assets/digital-marketing.gif"
           class="card-img-top"
@@ -250,7 +292,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 20rem">
+      <div class="card" style="width: 20rem" data-aos="fade-down-right">
         <img src="assets/seo-service.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">SEO</h5>
@@ -336,289 +378,293 @@
       </div>
     </div>
   </div>
-</div>
-<!-- features for business code end from here  -->
 
-<!-- what we offer code start here  -->
-<div class="benifits">
-  <div class="container">
-    <div class="buttons">
-      <button
-        *ngFor="let item of features; let i = index"
-        [ngClass]="{ active: selectedIndex === i }"
-        (click)="selectFeature(i)"
-      >
-        {{ item.name }}
-      </button>
-    </div>
+  <!-- features for business code end from here  -->
 
-    <div class="content">
-      <img [src]="features[selectedIndex].image" alt="Feature Image" />
-      <div class="text">
-        <h2>{{ features[selectedIndex].title }}</h2>
-        <p>{{ features[selectedIndex].description }}</p>
+  <!-- what we offer code start here  -->
+  <div class="benifits">
+    <div class="container">
+      <div class="buttons">
+        <button
+          *ngFor="let item of features; let i = index"
+          [ngClass]="{ active: selectedIndex === i }"
+          (click)="selectFeature(i)"
+        >
+          {{ item.name }}
+        </button>
       </div>
-    </div>
-  </div>
-</div>
-<!-- what we offer code end here  -->
 
-<!-- frequently asked question code start here  -->
-
-<div class="faq_area">
-  <div class="faq_title">
-    <h1>
-      Frequently Asked Question <font style="color: #00b36b">(FAQs).</font>
-    </h1>
-  </div>
-  <div class="question_area">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne"
-            aria-expanded="false"
-            aria-controls="flush-collapseOne"
-          >
-            1. What services does Macreel Infosoft Pvt. Ltd. offer?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseOne"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            We provide a range of IT solutions including website design and
-            development, custom software solutions, mobile app development, and
-            digital marketing services. Our goal is to help business establish a
-            strong online presence and achieve their digital objectives.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo"
-            aria-expanded="false"
-            aria-controls="flush-collapseTwo"
-          >
-            2. What is the process for starting website development project with
-            Macreel Infosoft?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseTwo"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Our website development process involves an initial consultation to
-            understand your needs, followed by planning and design phases. We
-            then develop and test the website before launching it. Throughout
-            the process, we keep you informed and involved to ensure the final
-            product meets your expectations.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
-          >
-            3. Can you help with website maintenance and updates?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseThree"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Yes, we offer ongoing website maintenance and support services.
-            Whether you need regular updates, ecurity enhacements, or
-            troubleshooting our team is hear to ensure your website remains
-            functional and up to date.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFour"
-            aria-expanded="false"
-            aria-controls="flush-collapseFour"
-          >
-            4. Do you offer custom software solutions?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseFour"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Absolutly! We specialize in creating custom software tailored to
-            your specific business needs. Whether you require a new application
-            or modifications to an existing one, our developers will work
-            closely with you to deliver a solution that fits your requuirements.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFive"
-            aria-expanded="false"
-            aria-controls="flush-collapseFive"
-          >
-            5. What is digital marketing , and how can it benefit my business?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseFive"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Digital marketing encompasses various strategies to promote your
-            advertising. Effective digital marketing helps increase your online
-            visibility, attract more customers, and drive growth.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseSix"
-            aria-expanded="false"
-            aria-controls="flush-collapseSix"
-          >
-            6. How long does it take to develop a website?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseSix"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            The timeline for website development varies based on the complexity
-            and scope of the project. On average, a standard website can take
-            anywhere from 4 to 8 weeks. We'll provide a more accurate timeline
-            during the initial consultation.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseSeven"
-            aria-expanded="false"
-            aria-controls="flush-collapseSeven"
-          >
-            7. Can you assit with app development for both Android and iOS
-            platforms?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseSeven"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Yes, we offer mobile app development services for both Android and
-            iOS platforms. Our team develops high - quality, user-friendly apps
-            that meet the specific needs of your business and target audience.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseEight"
-            aria-expanded="false"
-            aria-controls="flush-collapseEight"
-          >
-            8. What sets Macreel Infosoft apart from other IT service provider?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseEight"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            second item's accordion body. Let's imagine this being filled with
-            some actual content.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseNine"
-            aria-expanded="false"
-            aria-controls="flush-collapseNine"
-          >
-            9. How can i contact Macreel Infosoft Pvt. Ltd.?
-          </button>
-        </h2>
-        <div
-          id="flush-collapseNine"
-          class="accordion-collapse collapse"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            third item's accordion body. Nothing more exciting happening here in
-            terms of content, but just filling up the space to make it look, at
-            least at first glance, a bit more representative of how this would
-            look in a real-world application.
-          </div>
+      <div class="content">
+        <img [src]="features[selectedIndex].image" alt="Feature Image" />
+        <div class="text">
+          <h2>{{ features[selectedIndex].title }}</h2>
+          <p>{{ features[selectedIndex].description }}</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="image_area">
-    <img src="assets/webdesign.gif" alt="" />
-  </div>
-</div>
-<!-- frequently asked question code end here  -->
+  <!-- what we offer code end here  -->
 
-<!-- <div class="our_products">
+  <!-- frequently asked question code start here  -->
+
+  <div class="faq_area">
+    <div class="faq_title">
+      <h1>
+        Frequently Asked Question <font style="color: #00b36b">(FAQs).</font>
+      </h1>
+    </div>
+    <div class="question_area">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              1. What services does Macreel Infosoft Pvt. Ltd. offer?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              We provide a range of IT solutions including website design and
+              development, custom software solutions, mobile app development,
+              and digital marketing services. Our goal is to help business
+              establish a strong online presence and achieve their digital
+              objectives.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              2. What is the process for starting website development project
+              with Macreel Infosoft?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Our website development process involves an initial consultation
+              to understand your needs, followed by planning and design phases.
+              We then develop and test the website before launching it.
+              Throughout the process, we keep you informed and involved to
+              ensure the final product meets your expectations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              3. Can you help with website maintenance and updates?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Yes, we offer ongoing website maintenance and support services.
+              Whether you need regular updates, ecurity enhacements, or
+              troubleshooting our team is hear to ensure your website remains
+              functional and up to date.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              4. Do you offer custom software solutions?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Absolutly! We specialize in creating custom software tailored to
+              your specific business needs. Whether you require a new
+              application or modifications to an existing one, our developers
+              will work closely with you to deliver a solution that fits your
+              requuirements.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              5. What is digital marketing , and how can it benefit my business?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Digital marketing encompasses various strategies to promote your
+              advertising. Effective digital marketing helps increase your
+              online visibility, attract more customers, and drive growth.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              6. How long does it take to develop a website?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The timeline for website development varies based on the
+              complexity and scope of the project. On average, a standard
+              website can take anywhere from 4 to 8 weeks. We'll provide a more
+              accurate timeline during the initial consultation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeven"
+            >
+              7. Can you assit with app development for both Android and iOS
+              platforms?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Yes, we offer mobile app development services for both Android and
+              iOS platforms. Our team develops high - quality, user-friendly
+              apps that meet the specific needs of your business and target
+              audience.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEight"
+              aria-expanded="false"
+              aria-controls="flush-collapseEight"
+            >
+              8. What sets Macreel Infosoft apart from other IT service
+              provider?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              second item's accordion body. Let's imagine this being filled with
+              some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseNine"
+              aria-expanded="false"
+              aria-controls="flush-collapseNine"
+            >
+              9. How can i contact Macreel Infosoft Pvt. Ltd.?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseNine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third item's accordion body. Nothing more exciting happening here
+              in terms of content, but just filling up the space to make it
+              look, at least at first glance, a bit more representative of how
+              this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image_area">
+      <img src="assets/webdesign.gif" alt="" />
+    </div>
+  </div>
+  <!-- frequently asked question code end here  -->
+
+  <!-- <div class="our_products">
   <div class="heading">
     <h1>
       Elevate Your Business with Innovative <br />
@@ -635,185 +681,187 @@
   <div class="image-scrolling"></div>
 </div> -->
 
-<!-- our team code start from here  -->
+  <!-- our team code start from here  -->
 
-<div class="our_team">
-  <div class="team_title">
-    <h2>Our Team</h2>
-    <h1>Meet Our Advisers</h1>
-    <h6>
-      Our team comprises talented individuals who bring their expertise and
-      creativity <br />
-      to every project. From experienced developers and designers to strategic
-      marketers and project managers, <br />
-      each member of our team is dedicated to achieving excellence and exceeding
-      your expectations.
-    </h6>
+  <div class="our_team">
+    <div class="team_title">
+      <h2>Our Team</h2>
+      <h1>Meet Our Advisers</h1>
+      <h6>
+        Our team comprises talented individuals who bring their expertise and
+        creativity <br />
+        to every project. From experienced developers and designers to strategic
+        marketers and project managers, <br />
+        each member of our team is dedicated to achieving excellence and
+        exceeding your expectations.
+      </h6>
+    </div>
+
+    <div class="team_card_area">
+      <div class="team_card">
+        <div class="profile_img">
+          <img
+            src="assets/team-1.jpg"
+            alt="Macreel Infosoft Chairman"
+            title="NR Tyagi Mareel Infosoft Chairman"
+          />
+        </div>
+        <div class="details">
+          <h1>NR Tyagi</h1>
+          <h4>Chairman</h4>
+
+          <div class="links">
+            <span>
+              <a href="">
+                <img src="assets/facebook.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/instagram.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/linkedin.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/twitter.png" alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="overflow"></div>
+      </div>
+      <div class="team_card">
+        <div class="profile_img">
+          <img
+            src="assets/team-2.jpg"
+            alt="Director of Macreel Infosoft Manish Tyagi"
+            title="Manish Tyagi"
+          />
+        </div>
+        <div class="details">
+          <h1>Manish Tyagi</h1>
+          <h4>Director</h4>
+
+          <div class="links">
+            <span>
+              <a href="">
+                <img src="assets/facebook.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/instagram.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/linkedin.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/twitter.png" alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="overflow"></div>
+      </div>
+      <div class="team_card">
+        <div class="profile_img">
+          <img
+            src="assets/priyankas.jpeg"
+            alt="Himanshu Gupta HR Lead Macreel Infosoft"
+            title="Himanshu Gupta Macreel"
+          />
+        </div>
+        <div class="details">
+          <h1>Priyanka Maindolia</h1>
+          <h4>Director</h4>
+
+          <div class="links">
+            <span>
+              <a href="">
+                <img src="assets/facebook.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/instagram.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/linkedin.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/twitter.png" alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="overflow"></div>
+      </div>
+      <div class="team_card">
+        <div class="profile_img">
+          <img src="assets/team-3.jpg" alt="" />
+        </div>
+        <div class="details">
+          <h1>Himanhsu Gupta</h1>
+          <h4>HR Lead</h4>
+
+          <div class="links">
+            <span>
+              <a href="">
+                <img src="assets/facebook.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/instagram.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/linkedin.png" alt="" />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <img src="assets/twitter.png" alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="overflow"></div>
+      </div>
+    </div>
+  </div>
+  <!-- our team code ends here  -->
+
+  <!-- top Trending technology code start here -->
+
+  <div class="trending_technology">
+    <div class="tech_title">
+      <h1>Top Trending Technology</h1>
+      <h6>
+        Dive into Macreel Infosoft’s top tech picks! Stay on top of the latest
+        trends with trending technology <br />
+        on Angular, React, Java Script, Bootstrap, TypeScript,.Net and Many
+        More. Discover how <br />
+        these innovations are changing the world and get the insights <br />
+        you need to stay ahead. Explore what's new and exciting in tech with us!
+      </h6>
+    </div>
+    <div class="sliding_area"></div>
   </div>
 
-  <div class="team_card_area">
-    <div class="team_card">
-      <div class="profile_img">
-        <img
-          src="assets/team-1.jpg"
-          alt="Macreel Infosoft Chairman"
-          title="NR Tyagi Mareel Infosoft Chairman"
-        />
-      </div>
-      <div class="details">
-        <h1>NR Tyagi</h1>
-        <h4>Chairman</h4>
-
-        <div class="links">
-          <span>
-            <a href="">
-              <img src="assets/facebook.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/instagram.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/linkedin.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/twitter.png" alt="">
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="overflow"></div>
-    </div>
-    <div class="team_card">
-      <div class="profile_img">
-        <img
-          src="assets/team-2.jpg"
-          alt="Director of Macreel Infosoft Manish Tyagi"
-          title="Manish Tyagi"
-        />
-      </div>
-      <div class="details">
-        <h1>Manish Tyagi</h1>
-        <h4>Director</h4>
-
-        <div class="links">
-          <span>
-            <a href="">
-              <img src="assets/facebook.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/instagram.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/linkedin.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/twitter.png" alt="">
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="overflow"></div>
-    </div>
-    <div class="team_card">
-      <div class="profile_img">
-        <img
-          src="assets/team-3.jpg"
-          alt="Himanshu Gupta HR Lead Macreel Infosoft"
-          title="Himanshu Gupta Macreel"
-        />
-      </div>
-      <div class="details">
-        <h1>Himanshu Gupta</h1>
-        <h4>HR Head</h4>
-
-        <div class="links">
-          <span>
-            <a href="">
-              <img src="assets/facebook.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/instagram.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/linkedin.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/twitter.png" alt="">
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="overflow"></div>
-    </div>
-    <div class="team_card">
-      <div class="profile_img">
-        <img src="assets/team-3.jpg" alt="" />
-      </div>
-      <div class="details">
-        <h1>Priyanka Kumari</h1>
-        <h4>HR Manager</h4>
-
-        <div class="links">
-          <span>
-            <a href="">
-              <img src="assets/facebook.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/instagram.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/linkedin.png" alt="">
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <img src="assets/twitter.png" alt="">
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="overflow"></div>
-    </div>
-  </div>
+  <!-- top Trending technology code end here -->
 </div>
-<!-- our team code ends here  -->
-
-<!-- top Trending technology code start here -->
-
-<div class="trending_technology">
-  <div class="tech_title">
-    <h1>Top Trending Technology</h1>
-    <h6>
-      Dive into Macreel Infosoft’s top tech picks! Stay on top of the latest
-      trends with trending technology <br> on Angular, React, Java Script, Bootstrap,
-      TypeScript,.Net and Many More. Discover how <br> these innovations are changing
-      the world and get the insights <br> you need to stay ahead. Explore what's new
-      and exciting in tech with us!
-    </h6>
-  </div>
-  <div class="sliding_area"></div>
-</div>
-
-<!-- top Trending technology code end here -->

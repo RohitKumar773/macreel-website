@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
+
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 @Component({
   selector: 'app-container',
@@ -6,6 +11,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.scss'],
 })
 export class ContainerComponent {
+
+  constructor(
+    private dialog: MatDialog
+  ){}
+
+
   selectedIndex: number = 0;
 
   features = [
@@ -41,5 +52,11 @@ export class ContainerComponent {
 
   selectFeature(index: number) {
     this.selectedIndex = index;
+  }
+
+  openEnquiryForm(){
+    this.dialog.open(EnquiryFormComponent,{
+      disableClose:true
+    })
   }
 }

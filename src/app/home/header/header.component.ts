@@ -4,71 +4,69 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  constructor(private route: Router) {}
 
-  constructor(
-    private route:Router
-  ){}
-
-  scrollOnHome(){
+  scrollOnHome() {
     this.route.navigate(['/home']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnAbout(){
+  scrollOnAbout() {
     this.route.navigate(['/home/pages']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnDirector(){
+  scrollOnDirector() {
     this.route.navigate(['/home/pages/directorMsg']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnTeam(){
+  scrollOnTeam() {
     this.route.navigate(['/home/pages/ourteam']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnOrganization(){
+  scrollOnOrganization() {
     this.route.navigate(['/home/pages/orgStructure']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnVision(){
+  scrollOnVision() {
     this.route.navigate(['/home/pages/visson']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnWebdesign(){
+  scrollOnWebdesign() {
     this.route.navigate(['/home/webdesign/webdesign']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnEcommerce(){
+  scrollOnEcommerce() {
     this.route.navigate(['/home/webdesign/ecommerceWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  // 
-  scrollOnResponsiveWeb(){
+  //
+  scrollOnResponsiveWeb() {
     this.route.navigate(['/home/webdesign/responsiveWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnStaticWeb(){
+  scrollOnStaticWeb() {
     this.route.navigate(['/home/webdesign/staticWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnDynamicWeb(){
+  scrollOnDynamicWeb() {
     this.route.navigate(['/home/webdesign/dynamicWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnCustomWeb(){
+  scrollOnCustomWeb() {
     this.route.navigate(['/home/webdesign/customWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnReesign(){
+  scrollOnReesign() {
     this.route.navigate(['/home/webdesign/webRedesign']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  scrollOnSeoWeb(){
+  scrollOnSeoWeb() {
     this.route.navigate(['/home/webdesign/seoWeb']);
-    scroll(0,0);
+    scroll(0, 0);
   }
-  
-
+  scrollOnTop() {
+    scroll(0, 0);
+  }
 }

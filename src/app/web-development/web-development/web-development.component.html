@@ -1,0 +1,20 @@
+<div class="slider">
+    <swiper
+      [spaceBetween]="10"
+      [centeredSlides]="true"
+      [autoplay]="{ delay: 1000, disableOnInteraction: false }"
+      [pagination]="{ clickable: true, dynamicBullets: true }"
+      [grabCursor]="true"
+      [navigation]="true"
+      class="sliderBox"
+    >
+      <ng-template swiperSlide>
+        <img src="../../../assets/carousel-3.webp" alt="Slider image" />
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../../assets/carousel-4.webp" alt="Slider image" />
+      </ng-template>
+
+    </swiper>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, commodi.</h1>
+  </div>

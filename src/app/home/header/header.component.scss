@@ -58,7 +58,8 @@ header {
     display: flex;
     gap: 30px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
     .logo {
       width: 12%;
@@ -67,7 +68,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      
+      cursor: pointer;
 
       img {
         box-shadow: 2px 2px 5px rgb(194, 194, 194);
@@ -133,5 +134,46 @@ header {
         display: block;
       }
     }
+  }
+}
+.shortcuts {
+  width: 80px;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 5000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .boxes {
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+
+    mat-icon{
+      width: auto;
+      height: auto;
+      font-size: 28px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+    }
+  }
+  .boxes:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #25d366;
   }
 }
