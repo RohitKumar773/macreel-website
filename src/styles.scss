@@ -1,15 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+.title {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  margin-top: 50px;
+//   margin-bottom: 80px;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+  }
+}
+
