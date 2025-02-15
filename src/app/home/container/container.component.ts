@@ -11,11 +11,18 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
   styleUrls: ['./container.component.scss'],
 })
 export class ContainerComponent {
+  breaksPoint = {
+    320: { slidesPerView: 1, spaceBetween: 10 },
+    768: { slidesPerView: 2, spaceBetween: 10 },
+    1024: { slidesPerView: 3, spaceBetween: 10 },
+  };
+  breaksPoints = {
+    320: { slidesPerView: 2, spaceBetween: 10 },
+    768: { slidesPerView: 6, spaceBetween: 10 },
+    1024: { slidesPerView: 8, spaceBetween: 10 },
+  };
 
-  constructor(
-    private dialog: MatDialog
-  ){}
-
+  constructor(private dialog: MatDialog) {}
 
   selectedIndex: number = 0;
 
@@ -29,7 +36,8 @@ export class ContainerComponent {
     },
     {
       name: 'Cutting-Edge Technology',
-      title: 'Stay ahead of the competition with our state-of-the-art technology.',
+      title:
+        'Stay ahead of the competition with our state-of-the-art technology.',
       description:
         'Stay ahead of the competition with our state-of-the-art technology. We use the latest tools and innovations to ensure your digital presence is modern, efficient, and effective.',
       image: 'assets/technology.png',
@@ -54,9 +62,9 @@ export class ContainerComponent {
     this.selectedIndex = index;
   }
 
-  openEnquiryForm(){
-    this.dialog.open(EnquiryFormComponent,{
-      disableClose:true
-    })
+  openEnquiryForm() {
+    this.dialog.open(EnquiryFormComponent, {
+      disableClose: true,
+    });
   }
 }

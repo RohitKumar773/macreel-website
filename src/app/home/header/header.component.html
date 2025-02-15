@@ -87,51 +87,67 @@
 
       <div class="drop-down-menu">
         <ul>
-          <li>Portal Web Development</li>
-          <li>Custom Webdevelopment</li>
-          <li>CMS Wev Development</li>
+          <li routerLink="/home/webdevelopment/portalWeb">
+            Portal Web Development
+          </li>
+          <li routerLink="/home/webdevelopment/custom_web">
+            Custom Webdevelopment
+          </li>
+          <li routerLink="/home/webdevelopment/cms_web">CMS Wev Development</li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/software-development.gif" alt="" />
-      <span>Software Development</span>
+      <img
+        src="assets/software-development.gif"
+        alt="Software Development"
+        routerLink="/home/softwaredevelopment/softwaredev"
+      />
+      <span routerLink="/home/softwaredevelopment/softwaredev"
+        >Software Development</span
+      >
 
       <div class="drop-down-menu">
         <ul style="width: 100px; border: none">
-          <li>CRM</li>
+          <li routerLink="/home/softwaredevelopment/crm">CRM</li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/mobile-application.gif" alt="" />
-      <span>Mobile Application</span>
+      <img
+        src="assets/mobile-application.gif"
+        alt="Mobile application Development"
+        routerLink="/home/mobiledevelopment/mobile_app"
+      />
+      <span routerLink="/home/mobiledevelopment/mobile_app"
+        >Mobile Application</span
+      >
 
       <div class="drop-down-menu">
         <ul>
-          <li>Android App</li>
-          <li>Ios App</li>
-          <li>Hybrid App</li>
+          <li routerLink="/home/mobiledevelopment/android">Android App</li>
+          <li routerLink="/home/mobiledevelopment/ios">Ios App</li>
+          <li routerLink="/home/mobiledevelopment/hybrid">Hybrid App</li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/seo.gif" alt="" />
+      <img src="assets/seo.gif" alt="" routerLink="/home/seo/seo_opt" />
       <span>SEO</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li>On Page Optimization</li>
-          <li>Off Page Optimization</li>
-          <li>Link Building Services</li>
-          <li>App Store Optimization</li>
-          <li>E - Commerce SEO</li>
-          <li>Local SEO</li>
-          <li>Technical SEO</li>
-          <li>Video SEO</li>
+          <li routerLink="/home/seo/onpage">On Page Optimization</li>
+          <li routerLink="/home/seo/offpage">Off Page Optimization</li>
+          <li routerLink="/home/seo/link_building">Link Building Services</li>
+          <li routerLink="/home/seo/appstore">App Store Optimization</li>
+          <li routerLink="/home/seo/ecommerce">E - Commerce SEO</li>
+          <li routerLink="/home/seo/local_seo">Local SEO</li>
+          <li routerLink="/home/seo/technicalseo">Technical SEO</li>
+          <li routerLink="/home/seo/videoseo">Video SEO</li>
         </ul>
       </div>
     </div>
@@ -158,6 +174,43 @@
     <div class="drop-downs" routerLink="/home/pages/contact">
       <img src="assets/contact.gif" alt="" />
       <span>Contact US</span>
+    </div>
+
+    <div class="mobile_navigation">
+      <button
+        class="btn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+            Offcanvas with body scrolling
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </header>

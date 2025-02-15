@@ -172,7 +172,6 @@ $font-family: Arial, sans-serif;
         height: 300px;
         margin-left: 5%;
         border-radius: 1rem;
-        margin-left: 10%;
         object-fit: cover;
         margin-top: 5%;
       }
@@ -189,13 +188,14 @@ $font-family: Arial, sans-serif;
     margin-top: 40px;
 
     .card_area {
-      width: 80%;
+      width: 100%;
       height: calc(100% - 100px);
-      margin-left: 10%;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
 
       .card {
+        width: 350px;
         float: left;
         margin: 1%;
         background-color: rgb(248, 248, 248);
@@ -237,27 +237,27 @@ $font-family: Arial, sans-serif;
     float: left;
 
     .feature_card_area {
-      width: 80%;
+      width: 100%;
       height: auto;
-      margin-left: 10%;
-      margin-top: 20px;
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 15px;
 
       .card {
-        width: 19rem;
+        width: 300px;
         display: flex;
         align-items: center;
         margin-top: 5%;
 
         mat-icon {
-          width: 50px;
-          height: 50px;
+          width: auto;
+          height: auto;
           background-color: rgb(248, 248, 248);
           text-align: center;
           color: #00b36b;
-          line-height: 60px;
-          font-size: 2.5rem;
+          line-height: 70px;
+          font-size: 3rem;
         }
 
         .card-title {
@@ -340,6 +340,7 @@ $font-family: Arial, sans-serif;
 
     img {
       width: 40%;
+      height: 250px;
       border-radius: 10px;
     }
 
@@ -746,6 +747,117 @@ $font-family: Arial, sans-serif;
           font-size: 18px;
           margin: 0 2px;
         }
+      }
+    }
+  }
+}
+
+// media query start from here
+
+@media (max-width: 420px) and (min-width: 0px) {
+  .containers {
+    .sliderBox {
+      .text {
+        h1 {
+          font-size: 1.4rem;
+          line-height: 25px;
+          font-weight: 500;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        h5 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 0px) {
+  .containers {
+    .experience {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+
+      .contents {
+        width: 80%;
+        margin-top: 7%;
+      }
+
+      #image_content {
+        width: 80%;
+      }
+    }
+  }
+  .buttons {
+    width: 80%;
+  }
+  .faq_area {
+    .question_area {
+      width: 100%;
+
+      .accordion{
+        width: 90%;
+        margin-left: 5%;
+
+        .button{
+          height: auto;
+        }
+      }
+    }
+
+    .image_area {
+      width: 100%;
+      height: 400px;
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 780px) and (min-width: 0px) {
+  .containers {
+    .experience {
+      .contents {
+        .box_content_area {
+          .boxes {
+            width: 90%;
+            height: 160px;
+
+            .box_title {
+              h4 {
+                font-size: 20px;
+              }
+              h6 {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      #image_content {
+        width: 80%;
+
+        img {
+          width: 100%;
+          margin: 5% 0;
+        }
+      }
+    }
+  }
+  .faq_area {
+    .image_area {
+      width: 80%;
+      height: 200px;
+      margin: 20px 10%;
+      overflow: hidden;
+
+      img{
+        width: 100%;
+        height: 100%;
       }
     }
   }
