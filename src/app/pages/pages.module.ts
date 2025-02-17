@@ -11,7 +11,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButton, MatButtonModule } from '@angular/material/button';
-
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
     CommonModule,
     PagesRoutingModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    SwiperModule
   ]
 })
 export class PagesModule { }

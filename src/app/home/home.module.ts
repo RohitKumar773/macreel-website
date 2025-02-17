@@ -12,7 +12,7 @@ import { SwiperModule } from 'swiper/angular';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import {MatInputModule} from '@angular/material/input';
     SwiperModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ],
 })
 export class HomeModule {}
