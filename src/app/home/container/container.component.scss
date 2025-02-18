@@ -757,6 +757,7 @@ $font-family: Arial, sans-serif;
 @media (max-width: 420px) and (min-width: 0px) {
   .containers {
     .sliderBox {
+      height: 400px;
       .text {
         h1 {
           font-size: 1.4rem;

@@ -249,6 +249,79 @@ header {
   width: 60px;
   height: 100%;
   display: none;
+
+  .offcanvas-body {
+    .dropdown, .dropup {
+      width: 100%;
+
+      button {
+        width: 100%;
+        background: none;
+        color: black;
+        padding: 8px;
+        margin-top: 10px;
+        font-size: 1.05rem;
+        border: none;
+        text-align: left;
+      }
+      button:hover{
+        color: #198754;
+      }
+      .dropdown-menu {
+        width: 100%;
+
+        li{
+          width: 100%;
+          font-size: 1.08rem;
+          padding: 10px;
+
+          .google_promo{
+            width: 95%;
+            height: 350px;
+            position: absolute;
+            display: none;
+            overflow: auto;
+            top: 130px;
+            background-color: rgb(235, 235, 235);
+            color: black;
+
+            li{
+              width: 100%;
+              list-style: none;
+              margin-left: -9%;
+            }
+          }
+          .smo_dropdown{
+            width: 95%;
+            height: 200px;
+            position: absolute;
+            display: none;
+            overflow: auto;
+            top: 170px;
+            background-color: rgb(235, 235, 235);
+            color: black;
+
+            li{
+              width: 100%;
+              list-style: none;
+              margin-left: -5%;
+            }
+          }
+        }
+        li:hover .google_promo{
+          display: block;
+        }
+        li:hover .smo_dropdown{
+          display: block;
+        }
+        li:hover{
+          background-color: #25d366;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 // media query start

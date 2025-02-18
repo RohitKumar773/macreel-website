@@ -23,6 +23,7 @@ import { SeoWebsitePromotionComponent } from './seo-website-promotion/seo-websit
 import { TwiterPromotionComponent } from './twiter-promotion/twiter-promotion.component';
 import { WebPromotionCompanyComponent } from './web-promotion-company/web-promotion-company.component';
 import { WebsitePromotionCompanyComponent } from './website-promotion-company/website-promotion-company.component';
+import { GoogleSearchPromoComponent } from './google-search-promo/google-search-promo.component';
 
 const routes: Routes = [
   { path: '', component: DigitalMarketingComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'google_adword_company', component: GoogleAdwordCompanyComponent },
   { path: 'google_adword_prmo', component: GoogleAdwordPromotionComponent },
   { path: 'google_adword_service', component: GoogleAdwordServicesComponent },
+  { path: 'google_search_promo', component: GoogleSearchPromoComponent },
   {
     path: 'google_branding_service',
     component: GoogleBrandingServiceComponent,

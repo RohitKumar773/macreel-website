@@ -25,6 +25,7 @@ import { InstagramPromotionComponent } from './instagram-promotion/instagram-pro
 import { GooglePlusPromotionComponent } from './google-plus-promotion/google-plus-promotion.component';
 import { TwiterPromotionComponent } from './twiter-promotion/twiter-promotion.component';
 import { LinkedinPromotionComponent } from './linkedin-promotion/linkedin-promotion.component';
+import { GoogleSearchPromoComponent } from './google-search-promo/google-search-promo.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { LinkedinPromotionComponent } from './linkedin-promotion/linkedin-promot
     InstagramPromotionComponent,
     GooglePlusPromotionComponent,
     TwiterPromotionComponent,
-    LinkedinPromotionComponent
+    LinkedinPromotionComponent,
+    GoogleSearchPromoComponent
   ],
   imports: [
     CommonModule,

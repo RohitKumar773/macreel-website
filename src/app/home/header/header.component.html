@@ -174,21 +174,54 @@
             Google Promotions
             <div class="google_drop_down">
               <ul>
-                <li routerLink="/home/digitalmarketing/google_promo_service">Google Promotion Service</li>
-                <li routerLink="/home/digitalmarketing/google_ranking_service">Google Ranking Service</li>
-                <li routerLink="/home/digitalmarketing/google_branding_service">Google Branding Promotion</li>
-                <li routerLink="/home/digitalmarketing/google_adword_prmo">Google Adwords Promotion</li>
-                <li routerLink="/home/digitalmarketing/google_adword_company">Google Adwords Company</li>
-                <li routerLink="/home/digitalmarketing/google_adword_service">Google Adwords Service</li>
-                <li routerLink="/home/digitalmarketing/online_web_promo">Online Website Promotion</li>
-                <li routerLink="/home/digitalmarketing/website_promo_comp">Website Promotion Company</li>
-                <li routerLink="/home/digitalmarketing/promote_business_google">Promote Business On Google</li>
-                <li routerLink="/home/digitalmarketing/google_paid_promo">Google Paid Promotion</li>
-                <li routerLink="/home/digitalmarketing/web_promotion_comp">Web Promotion Company</li>
-                <li routerLink="/home/digitalmarketing/seo_website_promo">SEO Website Promotion</li>
-                <li routerLink="/home/digitalmarketing/local_web_promo">Local Website Promotion</li>
-                <li routerLink="/home/digitalmarketing/google_shoping_ad">Google Shoping Ads Promotion</li>
-                <li routerLink="/home/digitalmarketing/goole_marketing_service">Google Marketing Service</li>
+                <li routerLink="/home/digitalmarketing/google_promo_service">
+                  Google Promotion Service
+                </li>
+                <li routerLink="/home/digitalmarketing/google_ranking_service">
+                  Google Ranking Service
+                </li>
+                <li routerLink="/home/digitalmarketing/google_branding_service">
+                  Google Branding Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/google_adword_prmo">
+                  Google Adwords Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/google_adword_company">
+                  Google Adwords Company
+                </li>
+                <li routerLink="/home/digitalmarketing/google_adword_service">
+                  Google Adwords Service
+                </li>
+                <li routerLink="/home/digitalmarketing/online_web_promo">
+                  Online Website Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/website_promo_comp">
+                  Website Promotion Company
+                </li>
+                <li routerLink="/home/digitalmarketing/promote_business_google">
+                  Promote Business On Google
+                </li>
+                <li routerLink="/home/digitalmarketing/google_paid_promo">
+                  Google Paid Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/google_search_promo">
+                  Google Search Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/web_promotion_comp">
+                  Web Promotion Company
+                </li>
+                <li routerLink="/home/digitalmarketing/seo_website_promo">
+                  SEO Website Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/local_web_promo">
+                  Local Website Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/google_shoping_ad">
+                  Google Shoping Ads Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/goole_marketing_service">
+                  Google Marketing Service
+                </li>
               </ul>
             </div>
           </li>
@@ -197,11 +230,21 @@
 
             <div class="smo_dropdown">
               <ul>
-                <li routerLink="/home/digitalmarketing/facebook_promotion">Facebook Promotion</li>
-                <li routerLink="/home/digitalmarketing/google_plus_promo">Google Plus Promotion</li>
-                <li routerLink="/home/digitalmarketing/instagram_promotion">Instagram Promotion</li>
-                <li routerLink="/home/digitalmarketing/twiter_promo">Twitter Promotion</li>
-                <li routerLink="/home/digitalmarketing/linkedin_promo">LinkedIn Promotion</li>
+                <li routerLink="/home/digitalmarketing/facebook_promotion">
+                  Facebook Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/google_plus_promo">
+                  Google Plus Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/instagram_promotion">
+                  Instagram Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/twiter_promo">
+                  Twitter Promotion
+                </li>
+                <li routerLink="/home/digitalmarketing/linkedin_promo">
+                  LinkedIn Promotion
+                </li>
               </ul>
             </div>
           </li>
@@ -239,7 +282,7 @@
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-            Offcanvas with body scrolling
+            <h2>Menu</h2>
           </h5>
           <button
             type="button"
@@ -249,9 +292,257 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <p>
-            Try scrolling the rest of the page to see this option in action.
-          </p>
+          <div class="dropdown">
+            <button
+              (click)="scrollOnHome()"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              Home
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              (click)="scrollOnAbout()"
+            >
+              About
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Director Message
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">Our Team</li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Organization Structure
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Vision & Mission
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Website Designing
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Ecommerce Web Designing
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Responsive Web Designing
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Static Web Designing
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Dynamic Web Designing
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Custom Web Designing/li>
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Website Redesigning
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                SEO Web Designing
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Website Development
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Portal Web Development
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Custom Web Development
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                CMS Web Development
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              Software Development
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">CRM</li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Mobile Application
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Android App
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">IOS App</li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">Hybrid</li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              SEO
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                On Page Optimization
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Off Page Optimization
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Link Building Service
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                App Store Optimization
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                E - commerce SEO
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">Local SEO</li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Technical SEO
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">Video SEO</li>
+            </ul>
+          </div>
+          <div class="dropup">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Digital Marketing
+            </button>
+            <ul class="dropdown-menu">
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Email Marketing
+              </li>
+              <li data-bs-dismiss="offcanvas" aria-label="Close">
+                Internet Marketing
+              </li>
+              <li>
+                Google Promotion
+                <div class="google_promo">
+                  <ul>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Promotion Service
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Ranking Service
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Branding Service
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Adwords Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Adword Company
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Adword Service
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Online Website Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Website Promotion Company
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Promote Business On Google
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Paid Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Web Promotion Company
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      SEO Website Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Local Website Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Shoping Ads Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Marketing Service
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                SMO Service
+                <div class="smo_dropdown">
+                  <ul>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Facebook Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Google Plus Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Instagram Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      Twitter Promotion
+                    </li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                      LinkedIn Promotion
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button data-bs-dismiss="offcanvas" aria-label="Close">Blog</button>
+          </div>
+          <div class="dropdown">
+            <button data-bs-dismiss="offcanvas" aria-label="Close">
+              Contact
+            </button>
+          </div>
         </div>
       </div>
     </div>
