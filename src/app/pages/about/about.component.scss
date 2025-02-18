@@ -108,44 +108,21 @@
     width: 100%;
     height: auto;
     float: left;
-    
+    margin-top: 50px;
 
-    .team_title {
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      h2 {
-        font-size: 1.3rem;
-        color: #00b36b;
-      }
-      h1 {
-        font-weight: bold;
-        margin-top: -15px;
-        font-size: 2rem;
-      }
-      h6 {
-        line-height: 25px;
-        font-size: 14px;
-        text-align: center;
-        color: gray;
-      }
-    }
     .team_card_area {
-      width: 100%;
+      width: 80%;
       height: auto;
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
       margin-top: 40px;
+      margin-left: 10%;
 
       .team_card {
         width: 250px;
-        height: 340px;
-        background-color: whitesmoke;
+        height: 350px;
+        background-color: rgb(255, 255, 255);
         border-radius: 1rem;
         display: flex;
         justify-content: space-evenly;
@@ -153,28 +130,24 @@
         overflow: hidden;
         transition: 1s all;
         margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
         .profile_img {
           width: 100%;
-          height: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          height: 80%;
 
           img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            z-index: 5;
-            border: 3px dashed #00b36b;
-            padding: 3px;
-            transition: 1s;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
           }
         }
         .details {
           width: 100%;
-          height: calc(100% - 50%);
+          height: calc(100% - 80%);
           z-index: 5;
           display: flex;
           justify-content: space-evenly;
@@ -182,8 +155,9 @@
           align-items: center;
 
           h1 {
-            font-weight: 500;
-            font-size: 1.2rem;
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-top: 8px;
           }
           h4 {
             color: rgb(97, 97, 97);
@@ -210,34 +184,13 @@
               img {
                 width: 100%;
                 height: 100%;
+                opacity: 0.8;
+                transition: 0.2s;
+              }
+              img:hover {
+                opacity: 1;
               }
             }
-          }
-        }
-        .overflow {
-          width: 100%;
-          height: 250px;
-          background-color: #17303b;
-          transition: 0.5s;
-          border-top-left-radius: 2rem;
-          border-top-right-radius: 2rem;
-        }
-      }
-      .team_card:hover {
-        cursor: pointer;
-        .overflow {
-          margin-top: -250px;
-        }
-        .profile_img {
-          img {
-            border: 3px dashed whitesmoke;
-          }
-        }
-        .details {
-          color: white;
-
-          h4 {
-            color: white;
           }
         }
       }
