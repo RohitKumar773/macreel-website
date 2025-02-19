@@ -25,17 +25,15 @@
     }
   }
   .img_area {
-    width: 35%;
-    height: 100%;
+    max-height: 500px;
     overflow: hidden;
+    aspect-ratio: 1 / 1;
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      border-radius: 2rem;
+      object-fit: contain;
       transition: 0.5s;
-      margin-top: 10%;
     }
     img:hover {
       transform: scale(1.02);

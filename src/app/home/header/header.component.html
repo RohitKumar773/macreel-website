@@ -45,12 +45,12 @@
       <img src="assets/macreel-new-logo.png" alt="" />
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs" [class.active]="isActive('/home')">
       <img src="../../../assets/home.gif" alt="home" (click)="navigateTo('/home')" />
-      <span (click)="navigateTo('/home')">Home</span>
+      <span (click)="navigateTo('/home')" >Home</span>
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs"   [class.active]="isActive(['/home/pages', '/home/pages/directorMsg', '/home/pages/ourteam'])">
       <img src="assets/about.gif" alt="" (click)="navigateTo('/home/pages')" />
       <span (click)="navigateTo('/home/pages')">About</span>
 
