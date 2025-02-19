@@ -25,7 +25,7 @@ $font-family: Arial, sans-serif;
   overflow: hidden;
 
   .sliderBox {
-    height: 550px;
+    height: calc(100vh - 120px);
     display: flex;
     justify-content: center;
     align-items: center;
