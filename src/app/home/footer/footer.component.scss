@@ -60,7 +60,6 @@
 }
 
 .footer-bottom {
-  // background-color: #000;
   text-align: center;
   padding: 10px;
   font-size: 14px;
@@ -101,5 +100,12 @@
 
   .footer-column h4 {
     font-size: 14px;
+  }
+  .footer{
+    padding: 30px;
+  }
+  .footer-bottom{
+    height: auto;
+    line-height: 20px;
   }
 }

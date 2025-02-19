@@ -12,6 +12,7 @@ body {
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -31,6 +32,7 @@ body {
   h1 {
     font-size: 2rem;
     font-weight: 600;
+    line-height: 40px;
   }
 
   h6 {
@@ -38,6 +40,17 @@ body {
     font-size: 16px;
     text-align: center;
     color: gray;
+  }
+}
+
+
+.lh-normal{
+  line-height: normal !important;
+}
+
+@media screen and (max-width:768px) {
+  .flex-reverse{
+    flex-direction: column-reverse !important;
   }
 }
 

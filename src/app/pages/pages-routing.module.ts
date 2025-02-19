@@ -7,6 +7,8 @@ import { OrgStructureComponent } from './org-structure/org-structure.component';
 import { VissonComponent } from './visson/visson.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { TermsConditionComponent } from './terms-condition/terms-condition.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'visson', component: VissonComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blogs', component: BlogsComponent },
+  { path: 'terms', component: TermsConditionComponent },
+  { path: 'privacy', component: PrivacyComponent },
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@
     height: auto;
     float: left;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
 
     .contents {
       width: 60%;
@@ -23,10 +23,11 @@
         h1 {
           font-weight: bold;
           font-size: 30px;
+          line-height: 40px;
         }
         h6 {
           font-weight: 400;
-          font-size: 14px;
+          font-size: 16px;
           text-align: justify;
           margin-top: 10px;
           line-height: 25px;
@@ -35,16 +36,15 @@
         }
       }
       .box_content_area {
-        width: 90%;
+        width: 100%;
         height: auto;
         float: left;
-        margin-left: 8%;
 
         .boxes {
-          width: 40%;
+          width: 50%;
           height: 125px;
           float: left;
-          margin: 3% 2%;
+          margin-top: 20px;
 
           .icon_area {
             width: 30%;
@@ -57,7 +57,7 @@
               width: auto;
               height: auto;
               color: #00d084;
-              font-size: 40px;
+              font-size: 50px;
             }
           }
           button {
@@ -73,14 +73,14 @@
             height: 50px;
 
             h4 {
-              font-size: 18px;
-              font-weight: bold;
+              font-size: 25px;
+              font-weight: 500;
+              color: black;
             }
             h6 {
-              font-size: 13px;
-              line-height: 20px;
+              font-size: 16px;
+              line-height: 22px;
               color: gray;
-              font-weight: 500;
             }
           }
         }
@@ -94,7 +94,6 @@
         height: 300px;
         margin-left: 5%;
         border-radius: 1rem;
-        margin-left: 10%;
         object-fit: cover;
         margin-top: 5%;
       }
@@ -103,7 +102,6 @@
       }
     }
   }
-
   .our_team {
     width: 100%;
     height: auto;
@@ -192,6 +190,59 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 0) {
+  .about {
+    .experience {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+
+      .contents {
+        width: 80%;
+        margin-top: 7%;
+      }
+
+      #image_content {
+        width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: 720px) and (min-width: 0px) {
+  .about {
+    .experience {
+      .contents {
+        .box_content_area {
+          .boxes {
+            width: 90%;
+            height: 160px;
+
+            .box_title {
+              h4 {
+                font-size: 20px;
+              }
+              h6 {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      #image_content {
+        width: 80%;
+
+        img {
+          width: 100%;
+          margin: 5% 0;
         }
       }
     }

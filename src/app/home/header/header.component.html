@@ -11,68 +11,96 @@
       </a>
     </div>
     <div class="socail_media_links">
-      <a href="">
+      <a href="https://www.facebook.com/Macreelinfosoftpvtltd" target="_blank">
         <img src="assets/facebook.png" alt="macreel-facebook" />
       </a>
-      <a href="">
+      <a href="https://www.instagram.com/macreel_infosoft/" target="_blank">
         <img src="assets/instagram.png" alt="macreel-infosoft" />
       </a>
-      <a href="">
+      <a
+        href="https://www.linkedin.com/company/macreel-infosoft-pvt-ltd/"
+        target="_blank"
+      >
         <img src="assets/linkedin.png" alt="macreel-linkedin" />
       </a>
-      <a href="">
+      <a href="https://www.youtube.com/@macreelinfosoft563" target="_blank">
         <img src="assets/youtube.png" alt="macreel-youtube" />
       </a>
-      <a href="">
+      <a href="https://in.pinterest.com/macreelinfo/" target="_blank">
         <img src="assets/pinterest.png" alt="macreel-pinetrest" />
       </a>
-      <a href="">
+      <a
+        href="https://x.com/i/flow/login?redirect_after_login=%2FMacreel_Info"
+        target="_blank"
+      >
         <img src="assets/twitter.png" alt="macreel-twitter" />
       </a>
-      <a href="">
+      <a href="https://macreel-infosoft.blogspot.com/" target="_blank">
         <img src="assets/blogger.png" alt="macreel-blog" />
       </a>
     </div>
   </div>
   <div class="menu_area">
-    <div class="logo" (click)="scrollOnHome()">
-      <!-- <a href="#"> -->
+    <div class="logo" (click)="navigateTo('/home')">
       <img src="assets/macreel-new-logo.png" alt="" />
-      <!-- </a> -->
     </div>
 
     <div class="drop-downs">
-      <img src="assets/home.gif" alt="home" (click)="scrollOnHome()" />
-      <span routerLink="/home">Home</span>
+      <img src="assets/home.gif" alt="home" (click)="navigateTo('/home')" />
+      <span (click)="navigateTo('/home')">Home</span>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/about.gif" alt="" (click)="scrollOnAbout()" />
-      <span routerLink="/home/pages">About</span>
+      <img src="assets/about.gif" alt="" (click)="navigateTo('/home/pages')" />
+      <span (click)="navigateTo('/home/pages')">About</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li (click)="scrollOnDirector()">Director Message</li>
-          <li (click)="scrollOnTeam()">Our Team</li>
-          <li (click)="scrollOnOrganization()">Organization Structure</li>
-          <li (click)="scrollOnVision()">Vision & Mission</li>
+          <li (click)="navigateTo('/home/pages/directorMsg')">
+            Director Message
+          </li>
+          <li (click)="navigateTo('/home/pages/ourteam')">Our Team</li>
+          <li (click)="navigateTo('/home/pages/orgStructure')">
+            Organization Structure
+          </li>
+          <li (click)="navigateTo('/home/pages/visson')">Vision & Mission</li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/website.gif" alt="" (click)="scrollOnWebdesign()" />
-      <span (click)="scrollOnWebdesign()">Web Designing</span>
+      <img
+        src="assets/website.gif"
+        alt=""
+        (click)="navigateTo('/home/webdesign/webdesign')"
+      />
+      <span (click)="navigateTo('/home/webdesign/webdesign')"
+        >Web Designing</span
+      >
 
       <div class="drop-down-menu">
         <ul>
-          <li (click)="scrollOnEcommerce()">E - Commerce Web Designing</li>
-          <li (click)="scrollOnResponsiveWeb()">Responsive Web Designing</li>
-          <li (click)="scrollOnStaticWeb()">Static Web Designing</li>
-          <li (click)="scrollOnDynamicWeb()">Dynamic Web Designing</li>
-          <li (click)="scrollOnCustomWeb()">Custom Web Designing</li>
-          <li (click)="scrollOnReesign()">Website Redesigning</li>
-          <li (click)="scrollOnSeoWeb()">SEO Web Designing</li>
+          <li (click)="navigateTo('/home/webdesign/ecommerceWeb')">
+            E - Commerce Web Designing
+          </li>
+          <li (click)="navigateTo('/home/webdesign/responsiveWeb')">
+            Responsive Web Designing
+          </li>
+          <li (click)="navigateTo('/home/webdesign/staticWeb')">
+            Static Web Designing
+          </li>
+          <li (click)="navigateTo('/home/webdesign/dynamicWeb')">
+            Dynamic Web Designing
+          </li>
+          <li (click)="navigateTo('/home/webdesign/customWeb')">
+            Custom Web Designing
+          </li>
+          <li (click)="navigateTo('/home/webdesign/webRedesign')">
+            Website Redesigning
+          </li>
+          <li (click)="navigateTo('/home/webdesign/seoWeb')">
+            SEO Web Designing
+          </li>
         </ul>
       </div>
     </div>
@@ -81,19 +109,23 @@
       <img
         src="assets/software.gif"
         alt=""
-        routerLink="/home/webdevelopment/webDeve"
+        (click)="navigateTo('/home/webdevelopment/webDeve')"
       />
-      <span routerLink="/webdevelopment/webDeve">Web Development</span>
+      <span (click)="navigateTo('/home/webdevelopment/webDeve')"
+        >Web Development</span
+      >
 
       <div class="drop-down-menu">
         <ul>
-          <li routerLink="/home/webdevelopment/portalWeb">
+          <li (click)="navigateTo('/home/webdevelopment/portalWeb')">
             Portal Web Development
           </li>
-          <li routerLink="/home/webdevelopment/custom_web">
+          <li (click)="navigateTo('/home/webdevelopment/custom_web')">
             Custom Webdevelopment
           </li>
-          <li routerLink="/home/webdevelopment/cms_web">CMS Wev Development</li>
+          <li (click)="navigateTo('/home/webdevelopment/cms_web')">
+            CMS Wev Development
+          </li>
         </ul>
       </div>
     </div>
@@ -102,15 +134,15 @@
       <img
         src="assets/software-development.gif"
         alt="Software Development"
-        routerLink="/home/softwaredevelopment/softwaredev"
+        (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
       />
-      <span routerLink="/home/softwaredevelopment/softwaredev"
+      <span (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
         >Software Development</span
       >
 
       <div class="drop-down-menu">
         <ul style="width: 100px; border: none">
-          <li routerLink="/home/softwaredevelopment/crm">CRM</li>
+          <li (click)="navigateTo('/home/softwaredevelopment/crm')">CRM</li>
         </ul>
       </div>
     </div>
@@ -119,35 +151,45 @@
       <img
         src="assets/mobile-application.gif"
         alt="Mobile application Development"
-        routerLink="/home/mobiledevelopment/mobile_app"
+        (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
       />
-      <span routerLink="/home/mobiledevelopment/mobile_app"
+      <span (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
         >Mobile Application</span
       >
 
       <div class="drop-down-menu">
         <ul>
-          <li routerLink="/home/mobiledevelopment/android">Android App</li>
-          <li routerLink="/home/mobiledevelopment/ios">Ios App</li>
-          <li routerLink="/home/mobiledevelopment/hybrid">Hybrid App</li>
+          <li (click)="navigateTo('/home/mobiledevelopment/android')">
+            Android App
+          </li>
+          <li (click)="navigateTo('/home/mobiledevelopment/ios')">Ios App</li>
+          <li (click)="navigateTo('/home/mobiledevelopment/hybrid')">
+            Hybrid App
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="drop-downs">
-      <img src="assets/seo.gif" alt="" routerLink="/home/seo/seo_opt" />
-      <span>SEO</span>
+      <img src="assets/seo.gif" (click)="navigateTo('/home/seo/seo_opt')" />
+      <span (click)="navigateTo('/home/seo/seo_opt')">SEO</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li routerLink="/home/seo/onpage">On Page Optimization</li>
-          <li routerLink="/home/seo/offpage">Off Page Optimization</li>
-          <li routerLink="/home/seo/link_building">Link Building Services</li>
-          <li routerLink="/home/seo/appstore">App Store Optimization</li>
-          <li routerLink="/home/seo/ecommerce">E - Commerce SEO</li>
-          <li routerLink="/home/seo/local_seo">Local SEO</li>
-          <li routerLink="/home/seo/technicalseo">Technical SEO</li>
-          <li routerLink="/home/seo/videoseo">Video SEO</li>
+          <li (click)="navigateTo('/home/seo/onpage')">On Page Optimization</li>
+          <li (click)="navigateTo('/home/seo/offpage')">
+            Off Page Optimization
+          </li>
+          <li (click)="navigateTo('/home/seo/link_building')">
+            Link Building Services
+          </li>
+          <li (click)="navigateTo('/home/seo/appstore')">
+            App Store Optimization
+          </li>
+          <li (click)="navigateTo('/home/seo/ecommerce')">E - Commerce SEO</li>
+          <li (click)="navigateTo('/home/seo/local_seo')">Local SEO</li>
+          <li (click)="navigateTo('/home/seo/technicalseo')">Technical SEO</li>
+          <li (click)="navigateTo('/home/seo/videoseo')">Video SEO</li>
         </ul>
       </div>
     </div>
@@ -156,70 +198,132 @@
       <img
         src="assets/degital-marketing.gif"
         alt=""
-        routerLink="/home/digitalmarketing/digitalmark"
+        (click)="navigateTo('/home/digitalmarketing/digitalmark')"
       />
-      <span routerLink="/home/digitalmarketing/digitalmark"
+      <span (click)="navigateTo('/home/digitalmarketing/digitalmark')"
         >Digital Marketing</span
       >
 
       <div class="drop-down-menu">
         <ul>
-          <li routerLink="/home/digitalmarketing/email_marketing">
+          <li (click)="navigateTo('/home/digitalmarketing/email_marketing')">
             Email Marketing
           </li>
-          <li routerLink="/home/digitalmarketing/internet_marketing">
+          <li (click)="navigateTo('/home/digitalmarketing/internet_marketing')">
             Internet Marketing
           </li>
           <li>
             Google Promotions
             <div class="google_drop_down">
               <ul>
-                <li routerLink="/home/digitalmarketing/google_promo_service">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_promo_service')
+                  "
+                >
                   Google Promotion Service
                 </li>
-                <li routerLink="/home/digitalmarketing/google_ranking_service">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_ranking_service')
+                  "
+                >
                   Google Ranking Service
                 </li>
-                <li routerLink="/home/digitalmarketing/google_branding_service">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_branding_service')
+                  "
+                >
                   Google Branding Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/google_adword_prmo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_adword_prmo')
+                  "
+                >
                   Google Adwords Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/google_adword_company">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_adword_company')
+                  "
+                >
                   Google Adwords Company
                 </li>
-                <li routerLink="/home/digitalmarketing/google_adword_service">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_adword_service')
+                  "
+                >
                   Google Adwords Service
                 </li>
-                <li routerLink="/home/digitalmarketing/online_web_promo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/online_web_promo')
+                  "
+                >
                   Online Website Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/website_promo_comp">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/website_promo_comp')
+                  "
+                >
                   Website Promotion Company
                 </li>
-                <li routerLink="/home/digitalmarketing/promote_business_google">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/promote_business_google')
+                  "
+                >
                   Promote Business On Google
                 </li>
-                <li routerLink="/home/digitalmarketing/google_paid_promo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_paid_promo')
+                  "
+                >
                   Google Paid Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/google_search_promo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_search_promo')
+                  "
+                >
                   Google Search Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/web_promotion_comp">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/web_promotion_comp')
+                  "
+                >
                   Web Promotion Company
                 </li>
-                <li routerLink="/home/digitalmarketing/seo_website_promo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/seo_website_promo')
+                  "
+                >
                   SEO Website Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/local_web_promo">
+                <li
+                  (click)="navigateTo('/home/digitalmarketing/local_web_promo')"
+                >
                   Local Website Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/google_shoping_ad">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_shoping_ad')
+                  "
+                >
                   Google Shoping Ads Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/goole_marketing_service">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/goole_marketing_service')
+                  "
+                >
                   Google Marketing Service
                 </li>
               </ul>
@@ -230,19 +334,33 @@
 
             <div class="smo_dropdown">
               <ul>
-                <li routerLink="/home/digitalmarketing/facebook_promotion">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/facebook_promotion')
+                  "
+                >
                   Facebook Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/google_plus_promo">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/google_plus_promo')
+                  "
+                >
                   Google Plus Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/instagram_promotion">
+                <li
+                  (click)="
+                    navigateTo('/home/digitalmarketing/instagram_promotion')
+                  "
+                >
                   Instagram Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/twiter_promo">
+                <li (click)="navigateTo('/home/digitalmarketing/twiter_promo')">
                   Twitter Promotion
                 </li>
-                <li routerLink="/home/digitalmarketing/linkedin_promo">
+                <li
+                  (click)="navigateTo('/home/digitalmarketing/linkedin_promo')"
+                >
                   LinkedIn Promotion
                 </li>
               </ul>
@@ -252,14 +370,22 @@
       </div>
     </div>
 
-    <div class="drop-downs" routerLink="/home/pages/blogs">
-      <img src="assets/blog.gif" alt="" />
-      <span>Blog</span>
+    <div class="drop-downs">
+      <img
+        src="assets/blog.gif"
+        alt=""
+        (click)="navigateTo('/home/pages/blogs')"
+      />
+      <span (click)="navigateTo('/home/pages/blogs')">Blog</span>
     </div>
 
-    <div class="drop-downs" routerLink="/home/pages/contact">
-      <img src="assets/contact.gif" alt="" />
-      <span>Contact US</span>
+    <div class="drop-downs">
+      <img
+        src="assets/contact.gif"
+        alt=""
+        (click)="navigateTo('/home/pages/contact')"
+      />
+      <span (click)="navigateTo('/home/pages/contact')">Contact US</span>
     </div>
 
     <div class="mobile_navigation">
@@ -294,7 +420,7 @@
         <div class="offcanvas-body">
           <div class="dropdown">
             <button
-              (click)="scrollOnHome()"
+              (click)="navigateTo('/home')"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
@@ -308,19 +434,37 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-              (click)="scrollOnAbout()"
+              (click)="navigateTo('/home/pages')"
             >
               About
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/pages/directorMsg')"
+              >
                 Director Message
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">Our Team</li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/pages/ourteam')"
+              >
+                Our Team
+              </li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/pages/orgStructure')"
+              >
                 Organization Structure
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/pages/visson')"
+              >
                 Vision & Mission
               </li>
             </ul>
@@ -331,29 +475,58 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              (click)="navigateTo('/home/webdesign/webdesign')"
             >
               Website Designing
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/ecommerceWeb')"
+              >
                 Ecommerce Web Designing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/responsiveWeb')"
+              >
                 Responsive Web Designing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/staticWeb')"
+              >
                 Static Web Designing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/dynamicWeb')"
+              >
                 Dynamic Web Designing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
-                Custom Web Designing/li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/customWeb')"
+              >
+                Custom Web Designing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/webRedesign')"
+              >
                 Website Redesigning
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdesign/seoWeb')"
+              >
                 SEO Web Designing
               </li>
             </ul>
@@ -364,17 +537,30 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              (click)="navigateTo('/home/webdevelopment/webDeve')"
             >
               Website Development
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdevelopment/portalWeb')"
+              >
                 Portal Web Development
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdevelopment/custom_web')"
+              >
                 Custom Web Development
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/webdevelopment/cms_web')"
+              >
                 CMS Web Development
               </li>
             </ul>
@@ -387,11 +573,18 @@
               aria-expanded="false"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
+              (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
             >
               Software Development
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">CRM</li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/softwaredevelopment/crm')"
+              >
+                CRM
+              </li>
             </ul>
           </div>
           <div class="dropdown">
@@ -400,15 +593,32 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
             >
               Mobile Application
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/mobiledevelopment/android')"
+              >
                 Android App
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">IOS App</li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">Hybrid</li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/mobiledevelopment/ios')"
+              >
+                IOS App
+              </li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/mobiledevelopment/hybrid')"
+              >
+                Hybrid
+              </li>
             </ul>
           </div>
           <div class="dropdown">
@@ -417,30 +627,67 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              (click)="navigateTo('/home/seo/seo_opt')"
             >
               SEO
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/onpage')"
+              >
                 On Page Optimization
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/offpage')"
+              >
                 Off Page Optimization
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/link_building')"
+              >
                 Link Building Service
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/appstore')"
+              >
                 App Store Optimization
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/ecommerce')"
+              >
                 E - commerce SEO
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">Local SEO</li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/local_seo')"
+              >
+                Local SEO
+              </li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/technicalseo')"
+              >
                 Technical SEO
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">Video SEO</li>
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/seo/videoseo')"
+              >
+                Video SEO
+              </li>
             </ul>
           </div>
           <div class="dropup">
@@ -449,63 +696,187 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              (click)="navigateTo('/home/digitalmarketing/digitalmark')"
             >
               Digital Marketing
             </button>
             <ul class="dropdown-menu">
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="navigateTo('/home/digitalmarketing/email_marketing')"
+              >
                 Email Marketing
               </li>
-              <li data-bs-dismiss="offcanvas" aria-label="Close">
+              <li
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                (click)="
+                  navigateTo('/home/digitalmarketing/internet_marketing')
+                "
+              >
                 Internet Marketing
               </li>
               <li>
                 Google Promotion
                 <div class="google_promo">
                   <ul>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/google_promo_service'
+                        )
+                      "
+                    >
                       Google Promotion Service
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/google_ranking_service'
+                        )
+                      "
+                    >
                       Google Ranking Service
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/google_branding_service'
+                        )
+                      "
+                    >
                       Google Branding Service
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/google_adword_prmo')
+                      "
+                    >
                       Google Adwords Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/google_adword_company'
+                        )
+                      "
+                    >
                       Google Adword Company
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/google_adword_service'
+                        )
+                      "
+                    >
                       Google Adword Service
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/online_web_promo')
+                      "
+                    >
                       Online Website Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/website_promo_comp')
+                      "
+                    >
                       Website Promotion Company
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/promote_business_google'
+                        )
+                      "
+                    >
                       Promote Business On Google
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/google_paid_promo')
+                      "
+                    >
                       Google Paid Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/google_search_promo')
+                      "
+                    >
+                      Google Search Promotion
+                    </li>
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/web_promotion_comp')
+                      "
+                    >
                       Web Promotion Company
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/seo_website_promo')
+                      "
+                    >
                       SEO Website Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/local_web_promo')
+                      "
+                    >
                       Local Website Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/google_shoping_ad')
+                      "
+                    >
                       Google Shoping Ads Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo(
+                          '/home/digitalmarketing/goole_marketing_service'
+                        )
+                      "
+                    >
                       Google Marketing Service
                     </li>
                   </ul>
@@ -515,19 +886,49 @@
                 SMO Service
                 <div class="smo_dropdown">
                   <ul>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/facebook_promotion')
+                      "
+                    >
                       Facebook Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/google_plus_promo')
+                      "
+                    >
                       Google Plus Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/instagram_promotion')
+                      "
+                    >
                       Instagram Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/twiter_promo')
+                      "
+                    >
                       Twitter Promotion
                     </li>
-                    <li data-bs-dismiss="offcanvas" aria-label="Close">
+                    <li
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                      (click)="
+                        navigateTo('/home/digitalmarketing/linkedin_promo')
+                      "
+                    >
                       LinkedIn Promotion
                     </li>
                   </ul>
@@ -536,10 +937,20 @@
             </ul>
           </div>
           <div class="dropdown">
-            <button data-bs-dismiss="offcanvas" aria-label="Close">Blog</button>
+            <button
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              (click)="navigateTo('/home/pages/blogs')"
+            >
+              Blog
+            </button>
           </div>
           <div class="dropdown">
-            <button data-bs-dismiss="offcanvas" aria-label="Close">
+            <button
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              (click)="navigateTo('/home/pages/contact')"
+            >
               Contact
             </button>
           </div>

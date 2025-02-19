@@ -43,3 +43,26 @@
     }
   }
 }
+@media(max-width:1100px) and (min-width:0px){
+  .main{
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      gap: 0px;
+      
+      .text_area{
+          width: 100%;
+      }
+      .img_area{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img{
+              height: 300px;
+              width: 80%;
+          }
+      }
+  }
+}

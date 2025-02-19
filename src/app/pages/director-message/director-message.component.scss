@@ -47,3 +47,16 @@
         }
     }
 }
+@media(max-width:750px) and (min-width:0){
+    .main{
+        flex-direction: column;
+
+        .left_box{
+            width: 100%;
+        }
+        .right_box{
+            width: 100%;
+            padding: 40px;
+        }
+    }
+}

@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButton, MatButtonModule } from '@angular/material/button';
 import { SwiperModule } from 'swiper/angular';
+import { TermsConditionComponent } from './terms-condition/terms-condition.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SwiperModule } from 'swiper/angular';
     VissonComponent,
     BlogsComponent,
     ContactComponent,
+    TermsConditionComponent,
+    PrivacyComponent,
     
   ],
   imports: [

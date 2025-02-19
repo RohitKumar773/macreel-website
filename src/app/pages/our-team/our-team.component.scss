@@ -90,3 +90,22 @@
     }
   }
 }
+
+@media(max-width:500px) and (min-width:0px){
+  .our_team{
+    width: 100%;
+    overflow: hidden;
+    
+    .title{
+      width: 100%;
+      padding: 20px;
+      br{
+        display: none;
+      }
+    }
+    .team_card_area{
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+}
