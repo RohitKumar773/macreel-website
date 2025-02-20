@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -22,7 +23,31 @@ export class ContainerComponent {
     1024: { slidesPerView: 8, spaceBetween: 10 },
   };
 
-  constructor(private dialog: MatDialog) {}
+  constructor(
+    private dialog: MatDialog,
+    private _meta: Meta,
+    private _title: Title
+  ) {
+    this._title.setTitle('Best Software Development Company- Macreel Infosoft');
+    this._meta.addTags([
+      {
+        name: 'title',
+        content: 'Elevate your online presence with Macreel best IT solutions.',
+      },
+      {
+        name: 'description',
+        content:
+          'Macreel Infosoft is the Best Software Development Company. Get Responsive Website Design, SEO Services, Digital Marketing, Software Development, and App Development.',
+      },
+      {
+        name: 'keywords',
+        content:
+          'Website Designing, Website Designing In Delhi, Web Designing Company Delhi, Website Designing Company Noida, Website Development Company In Noida, Best Website Designing Company  In India, Website Designing Services In Noida, Responsive Website Designing Company In Delhi, Ecommerce Website Designing Company In Delhi, Website Designing Company In India, Website Designing Company In Noida, Best Seo Services In Delhi, Web Development Company In Delhi, Web Development Company In India  Software Development Company in Noida  App Development Compnay in Noida  Digital Marketing Services SEO Services in Noida',
+      },
+      { name: 'robots', content: 'follow, index' },
+      { name: 'og:type', content: 'website' },
+    ]);
+  }
 
   selectedIndex: number = 0;
 

@@ -46,11 +46,24 @@
     </div>
 
     <div class="drop-downs" [class.active]="isActive('/home')">
-      <img src="../../../assets/home.gif" alt="home" (click)="navigateTo('/home')" />
-      <span (click)="navigateTo('/home')" >Home</span>
+      <img
+        src="../../../assets/home.gif"
+        alt="home"
+        (click)="navigateTo('/home')"
+      />
+      <span (click)="navigateTo('/home')">Home</span>
     </div>
 
-    <div class="drop-downs"   [class.active]="isActive(['/home/pages', '/home/pages/directorMsg', '/home/pages/ourteam'])">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/pages',
+          '/home/pages/directorMsg',
+          '/home/pages/ourteam'
+        ])
+      "
+    >
       <img src="assets/about.gif" alt="" (click)="navigateTo('/home/pages')" />
       <span (click)="navigateTo('/home/pages')">About</span>
 
@@ -68,7 +81,21 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/webdesign/webdesign',
+          '/home/webdesign/ecommerceWeb',
+          '/home/webdesign/responsiveWeb',
+          '/home/webdesign/staticWeb',
+          '/home/webdesign/dynamicWeb',
+          '/home/webdesign/customWeb',
+          '/home/webdesign/webRedesign',
+          '/home/webdesign/seoWeb'
+        ])
+      "
+    >
       <img
         src="assets/website.gif"
         alt=""
@@ -105,7 +132,17 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/webdevelopment/webDeve',
+          '/home/webdevelopment/portalWeb',
+          '/home/webdevelopment/custom_web',
+          '/home/webdevelopment/cms_web'
+        ])
+      "
+    >
       <img
         src="assets/software.gif"
         alt=""
@@ -130,7 +167,15 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/softwaredevelopment/softwaredev',
+          '/home/softwaredevelopment/crm'
+        ])
+      "
+    >
       <img
         src="assets/software-development.gif"
         alt="Software Development"
@@ -147,7 +192,17 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/mobiledevelopment/mobile_app',
+          '/home/mobiledevelopment/android',
+          '/home/mobiledevelopment/ios',
+          '/home/mobiledevelopment/hybrid'
+        ])
+      "
+    >
       <img
         src="assets/mobile-application.gif"
         alt="Mobile application Development"
@@ -170,7 +225,22 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/seo/seo_opt',
+          '/home/seo/onpage',
+          '/home/seo/offpage',
+          '/home/seo/link_building',
+          '/home/seo/appstore',
+          '/home/seo/ecommerce',
+          '/home/seo/local_seo',
+          '/home/seo/technicalseo',
+          '/home/seo/videoseo'
+        ])
+      "
+    >
       <img src="assets/seo.gif" (click)="navigateTo('/home/seo/seo_opt')" />
       <span (click)="navigateTo('/home/seo/seo_opt')">SEO</span>
 
@@ -194,7 +264,36 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div
+      class="drop-downs"
+      [class.active]="
+        isActive([
+          '/home/digitalmarketing/digitalmark',
+          '/home/digitalmarketing/email_marketing',
+          '/home/digitalmarketing/internet_marketing',
+          '/home/digitalmarketing/google_promo_service',
+          '/home/digitalmarketing/google_ranking_service',
+          '/home/digitalmarketing/google_branding_service',
+          '/home/digitalmarketing/google_adword_prmo',
+          '/home/digitalmarketing/online_web_promo',
+          '/home/digitalmarketing/google_adword_company',
+          '/home/digitalmarketing/google_adword_service',
+          '/home/digitalmarketing/website_promo_comp',
+          '/home/digitalmarketing/promote_business_google',
+          '/home/digitalmarketing/google_search_promo',
+          '/home/digitalmarketing/web_promotion_comp',
+          '/home/digitalmarketing/seo_website_promo',
+          '/home/digitalmarketing/local_web_promo',
+          '/home/digitalmarketing/google_shoping_ad',
+          '/home/digitalmarketing/goole_marketing_service',
+          '/home/digitalmarketing/facebook_promotion',
+          '/home/digitalmarketing/google_plus_promo',
+          '/home/digitalmarketing/instagram_promotion',
+          '/home/digitalmarketing/twiter_promo',
+          '/home/digitalmarketing/linkedin_promo'
+        ])
+      "
+    >
       <img
         src="assets/degital-marketing.gif"
         alt=""
@@ -370,7 +469,7 @@
       </div>
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs" [class.active]="isActive(['/home/pages/blogs'])">
       <img
         src="assets/blog.gif"
         alt=""
@@ -379,7 +478,7 @@
       <span (click)="navigateTo('/home/pages/blogs')">Blog</span>
     </div>
 
-    <div class="drop-downs">
+    <div class="drop-downs" [class.active]="isActive(['/home/pages/contact'])">
       <img
         src="assets/contact.gif"
         alt=""
@@ -424,6 +523,13 @@
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
+              <img
+                src="assets/home.gif"
+                alt="home"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Home
             </button>
           </div>
@@ -436,7 +542,15 @@
               aria-expanded="false"
               (click)="navigateTo('/home/pages')"
             >
+              <img
+                src="assets/about.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               About
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -477,7 +591,15 @@
               aria-expanded="false"
               (click)="navigateTo('/home/webdesign/webdesign')"
             >
+              <img
+                src="assets/website.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Website Designing
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -539,7 +661,15 @@
               aria-expanded="false"
               (click)="navigateTo('/home/webdevelopment/webDeve')"
             >
-              Website Development
+              <img
+                src="assets/software.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
+              Web Development
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -575,7 +705,15 @@
               aria-label="Close"
               (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
             >
+              <img
+                src="assets/software-development.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Software Development
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -595,7 +733,15 @@
               aria-expanded="false"
               (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
             >
+              <img
+                src="assets/mobile-application.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Mobile Application
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -628,8 +774,17 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
               (click)="navigateTo('/home/seo/seo_opt')"
+              
             >
+              <img
+                src="assets/seo.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               SEO
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -698,7 +853,15 @@
               aria-expanded="false"
               (click)="navigateTo('/home/digitalmarketing/digitalmark')"
             >
+              <img
+                src="assets/degital-marketing.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Digital Marketing
+              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -942,6 +1105,13 @@
               aria-label="Close"
               (click)="navigateTo('/home/pages/blogs')"
             >
+              <img
+                src="assets/blog.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Blog
             </button>
           </div>
@@ -951,6 +1121,13 @@
               aria-label="Close"
               (click)="navigateTo('/home/pages/contact')"
             >
+              <img
+                src="assets/contact.gif"
+                alt="about"
+                width="30px"
+                height="30px"
+                style="margin-top: -13px"
+              />
               Contact
             </button>
           </div>

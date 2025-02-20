@@ -49,10 +49,13 @@
 }
 @media(max-width:750px) and (min-width:0){
     .main{
+        margin-top: 0px;
         flex-direction: column;
 
         .left_box{
             width: 100%;
+
+
         }
         .right_box{
             width: 100%;

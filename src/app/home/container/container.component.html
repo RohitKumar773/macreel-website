@@ -1,30 +1,43 @@
 <div class="containers">
-  <swiper data-aos="fade-down"
+  <swiper
+    
     [spaceBetween]="10"
     [centeredSlides]="true"
     [autoplay]="{ delay: 5000, disableOnInteraction: false }"
     [pagination]="{ clickable: true, dynamicBullets: true }"
     [grabCursor]="true"
     [loop]="true"
-    class="sliderBox"
-  >
+    class="sliderBox">
     <ng-template swiperSlide>
       <div class="text">
-        <h3 data-aos="fade-up" data-aos-duration="1000">Welcome to Macreel Infosoft</h3>
-        <h1 data-aos="fade-up" data-aos-duration="1000">Software and Web Development Services</h1>
+        <h3 data-aos="fade-up" data-aos-duration="1000">
+          Welcome to Macreel Infosoft
+        </h3>
+        <h1 data-aos="fade-up" data-aos-duration="1000">
+          Software and Web Development Services in Noida
+        </h1>
         <h5 data-aos="fade-up" data-aos-duration="1000">
           One stop solution for your business need! We help your business grow
           with great websites, <br />
           software, apps, and digital marketing. We're here only for you
         </h5>
-        <button mat-raised-button (click)="openEnquiryForm()" data-aos="fade-up">Enquiry</button>
+        <button
+          mat-raised-button
+          (click)="openEnquiryForm()"
+          data-aos="fade-up">
+          Enquiry
+        </button>
       </div>
       <img src="../../../assets/carousel-3.webp" alt="Slider image" />
     </ng-template>
     <ng-template swiperSlide>
       <div class="text">
         <h3>Digital Marketing Services</h3>
-        <h1>Success start here — let's make it happen together!</h1>
+        <div class="title">
+          <h6 class="head_title">
+            Success start here — let's make it happen together!
+          </h6>
+        </div>
         <h5>
           We'll make sure your business stands out, reaches the right audience
           and drives real results. <br />
@@ -39,12 +52,12 @@
   <!-- year of experience code start here  -->
   <div class="experience">
     <div class="contents">
-      <div class="title_content" data-aos="fade-right" data-aos-duration="1000">
-        <h1>
+      <div class="title" data-aos="fade-right" data-aos-duration="1000">
+        <h6 style="text-align: left" class="head_title">
           The Best IT Solution With 12+ <br />
           Years of Experience
-        </h1>
-        <h6>
+        </h6>
+        <h4 style="text-align: left">
           Macreel Infosoft Pvt. Ltd. is
           <b>Top IT Services Company in Delhi NCR, India</b> with a diversified
           portfolio and a precise approach to Website design & development,
@@ -60,7 +73,7 @@
           leading Digital Marketing company, we specialize in propelling your
           business to new heights. Choose us to boost your online presence,
           engage your audience, and drive conversion.
-        </h6>
+        </h4>
       </div>
       <div class="box_content_area">
         <div class="boxes" data-aos="fade-left" data-aos-duration="1000">
@@ -69,10 +82,10 @@
           </div>
           <div class="box_title">
             <h4>Best IT Solutions</h4>
-            <h6>
+            <h5>
               Innovative, cutting-edge technologies, user-friendly, customized
               solutions
-            </h6>
+            </h5>
           </div>
         </div>
         <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
@@ -81,10 +94,10 @@
           </div>
           <div class="box_title">
             <h4>Professional Staff</h4>
-            <h6>
+            <h5>
               Highly qualified, collaborating seamlessly, focused on quality and
               teamwork.
-            </h6>
+            </h5>
           </div>
         </div>
         <div class="boxes" data-aos="fade-left" data-aos-duration="1000">
@@ -93,10 +106,10 @@
           </div>
           <div class="box_title">
             <h4>State-of-the-Art Infrastructure</h4>
-            <h6>
+            <h5>
               Excellent infrastructure with a comfortable environment for the
               company.
-            </h6>
+            </h5>
           </div>
         </div>
         <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
@@ -105,10 +118,10 @@
           </div>
           <div class="box_title">
             <h4>24/7 Support</h4>
-            <h6>
+            <h5>
               Our priority is to ensure client satisfaction. We offer reliable
               assistance around the clock
-            </h6>
+            </h5>
           </div>
         </div>
         <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
@@ -117,10 +130,10 @@
           </div>
           <div class="box_title">
             <h4>Affordable Price</h4>
-            <h6>
+            <h5>
               We understand the importance of budget-friendly solutions without
               compromising on quality.
-            </h6>
+            </h5>
           </div>
         </div>
       </div>
@@ -146,7 +159,9 @@
 
   <div class="services">
     <div class="title">
-      <h1 data-aos="fade-right">Best IT Services in Noida, India</h1>
+      <h6 data-aos="fade-right" class="head_title">
+        Best IT Services in Noida, India
+      </h6>
       <h4 data-aos="fade-down-left">
         At Macreel Infosoft Pvt. Ltd, we are committed to transforming your
         digital dreams into reality. <br />
@@ -155,7 +170,7 @@
       </h4>
     </div>
     <div class="card_area">
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img src="assets/webdesign.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Website Designing</h5>
@@ -168,7 +183,7 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img
           src="assets/website-development.gif"
           class="card-img-top"
@@ -185,7 +200,7 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img src="assets/software-dev.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Software Development</h5>
@@ -198,7 +213,7 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img src="assets/mobileapp.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Mobile App Development</h5>
@@ -211,7 +226,7 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img
           src="assets/digital-marketing.gif"
           class="card-img-top"
@@ -229,7 +244,7 @@
         </div>
       </div>
 
-      <div class="card" data-aos="fade-down">
+      <div class="card" >
         <img src="assets/seo-service.gif" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">SEO</h5>
@@ -250,7 +265,7 @@
 
   <div class="features">
     <div class="title" data-aos="fade-up" data-aos-duration="1000">
-      <h1>Top Features for Your Business Success</h1>
+      <h6 class="head_title">Top Features for Your Business Success</h6>
       <h4>
         Macreel Infosoft delivers Top-notch IT solutions with a focus on
         Cutting-Edge Technology and End-to-End Development <br />
@@ -320,22 +335,30 @@
 
   <!-- what we offer code start here  -->
   <div class="benifits">
-    <h1 data-aos="fade-up">Benefits We offer</h1>
+    <div class="title">
+      <h6 data-aos="fade-up" class="head_title">Benefits We offer</h6>
+    </div>
     <div class="containerss">
       <div class="buttons">
-        <button data-aos="fade-down"
+        <button
+          
           *ngFor="let item of features; let i = index"
           [ngClass]="{ active: selectedIndex === i }"
-          (click)="selectFeature(i)">
+          (click)="selectFeature(i)"
+        >
           {{ item.name }}
         </button>
       </div>
 
       <div class="content">
-        <img [src]="features[selectedIndex].image" alt="Feature Image" data-aos="fade-down"/>
+        <img
+          [src]="features[selectedIndex].image"
+          alt="Feature Image"
+          
+        />
         <div class="text">
-          <h2 data-aos="fade-down">{{ features[selectedIndex].title }}</h2>
-          <p data-aos="fade-down">{{ features[selectedIndex].description }}</p>
+          <h2>{{ features[selectedIndex].title }}</h2>
+          <p>{{ features[selectedIndex].description }}</p>
         </div>
       </div>
     </div>
@@ -345,8 +368,8 @@
   <!-- blogs for business growth code start here  -->
 
   <div class="blogs_aera">
-    <div class="title" data-aos="fade-up">
-      <h1>Blogs For Business Growth</h1>
+    <div class="title">
+      <h6 class="head_title">Blogs For Business Growth</h6>
       <h4>
         Stay updated with Macreel Infosoft for latest insights and industry
         trends! Check topics on website <br />
@@ -362,15 +385,14 @@
         [autoplay]="{ delay: 3000, disableOnInteraction: false }"
         [loop]="true"
         [breakpoints]="breaksPoint"
-        class="custom-swiper"
-      >
+        class="custom-swiper">
         <ng-template swiperSlide>
           <div class="card">
             <img src="assets/e-commerce.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h1 class="card-title">
+              <h6 class="card-title">
                 Top e-commerce Website Dvelopment Company in 2024.
-              </h1>
+              </h6>
               <p class="card-text">
                 In the ever-evolving world of eCommerce, having a cutting-edge
                 online store is essential for success. As we move through 2024,
@@ -387,10 +409,10 @@
           <div class="card">
             <img src="assets/web-app.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h1 class="card-title">
+              <h6 class="card-title">
                 How to develop a custom Dropshipping App everything you need to
                 know
-              </h1>
+              </h6>
               <p class="card-text">
                 In the rapidly growing world of e- commerce, dropshipping has
                 emerged as a popular model for entrepreneurs looking to start
@@ -405,9 +427,9 @@
           <div class="card">
             <img src="assets/mobile-apps.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h1 class="card-title">
+              <h6 class="card-title">
                 A complete guide to web application development: Types
-              </h1>
+              </h6>
               <p class="card-text">
                 In today's digital landscape, web applications play a crucial
                 role in transforming business operations and enhancing user
@@ -428,12 +450,12 @@
   <!-- frequently asked question code start here  -->
 
   <div class="faq_area">
-    <div class="faq_title">
-      <h1 data-aos="fade-down">
+    <div class="title">
+      <h6 class="head_title">
         Frequently Asked Question <font style="color: #00b36b">(FAQs).</font>
-      </h1>
+      </h6>
     </div>
-    <div class="question_area" data-aos="fade-right" data-aos-duration="1000">
+    <div class="question_area">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
@@ -650,7 +672,7 @@
         </div>
       </div>
     </div>
-    <div class="image_area" data-aos="fade-left" data-aos-duration="1000">
+    <div class="image_area">
       <img src="assets/webdesign.gif" alt="" />
     </div>
   </div>
@@ -660,19 +682,21 @@
 
   <div class="our_team">
     <div class="title">
-      <h1 data-aos="fade-up" data-aos-duration="1000">Meet Our Advisers</h1>
-      <h6 data-aos="fade-up" data-aos-duration="1000">
+      <h6 class="head_title">
+        Meet Our Advisers
+      </h6>
+      <h4>
         Our team comprises talented individuals who bring their expertise and
         creativity <br />
         to every project. From experienced developers and designers to strategic
         marketers and project managers, <br />
         each member of our team is dedicated to achieving excellence and
         exceeding your expectations.
-      </h6>
+      </h4>
     </div>
 
     <div class="team_card_area">
-      <div class="team_card" data-aos="fade-right" data-aos-duration="1000">
+      <div class="team_card">
         <div class="profile_img">
           <img
             src="assets/team-1.jpg"
@@ -681,12 +705,12 @@
           />
         </div>
         <div class="details">
-          <h1>NR Tyagi</h1>
+          <h6>NR Tyagi</h6>
           <h4>Chairman</h4>
         </div>
         <!-- <div class="overflow"></div> -->
       </div>
-      <div class="team_card" data-aos="fade-left" data-aos-duration="2000">
+      <div class="team_card">
         <div class="profile_img">
           <img
             src="assets/team-2.jpg"
@@ -695,13 +719,13 @@
           />
         </div>
         <div class="details">
-          <h1>Manish Tyagi</h1>
+          <h6>Manish Tyagi</h6>
           <h4>Director</h4>
         </div>
         <!-- <div class="overflow"></div> -->
       </div>
 
-      <div class="team_card" data-aos="fade-right" data-aos-duration="3000">
+      <div class="team_card">
         <div class="profile_img">
           <img
             src="assets/priyankas.jpeg"
@@ -710,18 +734,18 @@
           />
         </div>
         <div class="details">
-          <h1>Priyanka Maindolia</h1>
+          <h6>Priyanka Maindolia</h6>
           <h4>Director</h4>
         </div>
         <!-- <div class="overflow"></div> -->
       </div>
-      <div class="team_card" data-aos="fade-left" data-aos-duration="4000">
+      <div class="team_card">
         <div class="profile_img">
           <img src="assets/team-3.jpg" alt="" />
         </div>
         <div class="details">
-          <h1>Himanhsu Gupta</h1>
-          <h4>HR Lead</h4>
+          <h6>Himanhsu Gupta</h6>
+          <h4>HR Head</h4>
         </div>
         <!-- <div class="overflow"></div> -->
       </div>
@@ -733,15 +757,17 @@
 
   <div class="trending_technology">
     <div class="title">
-      <h1 data-aos="fade-up" data-aos-duration="1000">Top Trending Technology</h1>
-      <h6 data-aos="fade-up" data-aos-duration="1000">
+      <h6 class="head_title">
+        Top Trending Technology
+      </h6>
+      <h4>
         Dive into Macreel Infosoft’s top tech picks! Stay on top of the latest
         trends with trending technology <br />
         on Angular, React, Java Script, Bootstrap, TypeScript,.Net and Many
         More. Discover how <br />
         these innovations are changing the world and get the insights <br />
         you need to stay ahead. Explore what's new and exciting in tech with us!
-      </h6>
+      </h4>
     </div>
     <div class="sliding_area">
       <swiper
@@ -816,14 +842,16 @@
 
   <div class="latest_portfolio">
     <div class="title">
-      <h1 data-aos="fade-up" data-aos-duration="1000">Latest Portfolio</h1>
-      <h6 data-aos="fade-up" data-aos-duration="1000">
+      <h6 data-aos="fade-up" data-aos-duration="1000" class="head_title">
+        Latest Portfolio
+      </h6>
+      <h4 data-aos="fade-up" data-aos-duration="1000">
         At Macreel Infosoft, we pride ourselves on delivering cutting-edge IT
         solutions that drive innovation and <br />
         success for our clients. Our latest portfolio showcases our commitment
         to excellence across various <br />
         industries. Here’s a glimpse of our recent projects:
-      </h6>
+      </h4>
     </div>
     <div class="slide_portfolio">
       <swiper
@@ -911,14 +939,16 @@
 
   <div class="premium_client">
     <div class="title">
-      <h1 data-aos="fade-up" data-aos-duration="1000">Our Premium Clients</h1>
-      <h6 data-aos="fade-up" data-aos-duration="1000">
+      <h6 class="head_title">
+        Our Premium Clients
+      </h6>
+      <h4>
         At Macreel Infosoft, we pride ourselves on delivering cutting-edge IT
         solutions that drive innovation and <br />
         success for our clients. Our latest portfolio showcases our commitment
         to excellence across various <br />
         industries. Here’s a glimpse of our recent projects:
-      </h6>
+      </h4>
     </div>
     <div class="icon_slide">
       <swiper
@@ -1037,7 +1067,9 @@
 
   <div class="testimonials">
     <div class="title">
-      <h1 data-aos="fade-up" data-aos-duration="1000">What Our Clients Say About Our Services</h1>
+      <h6 class="head_title">
+        What Our Clients Say About Our Services
+      </h6>
     </div>
 
     <div class="review_area">
@@ -1246,7 +1278,7 @@
         <img src="assets/turningbrain.png" alt="" width="100%" />
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-secondary">
           Close
         </button>
       </div>
