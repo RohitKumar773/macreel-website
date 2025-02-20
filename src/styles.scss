@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Liter&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +10,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-}
-html,
-body {
-  height: 100%;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 
@@ -39,6 +33,9 @@ body {
     font-size: 2rem;
     font-weight: 600;
     line-height: 40px;
+  }
+  h4{
+    color: gray;
   }
 }
 

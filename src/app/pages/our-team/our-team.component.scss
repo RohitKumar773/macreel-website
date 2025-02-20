@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   float: left;
-  margin-top: 50px;
 
   .team_card_area {
     width: 80%;
@@ -48,7 +47,7 @@
         flex-direction: column;
         align-items: center;
 
-        h1 {
+        h6 {
           font-weight: 600;
           font-size: 1.15rem;
           margin-top: 8px;
@@ -87,25 +86,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media(max-width:500px) and (min-width:0px){
-  .our_team{
-    width: 100%;
-    overflow: hidden;
-    
-    .title{
-      width: 100%;
-      padding: 20px;
-      br{
-        display: none;
-      }
-    }
-    .team_card_area{
-      width: 100%;
-      margin-left: 0%;
     }
   }
 }

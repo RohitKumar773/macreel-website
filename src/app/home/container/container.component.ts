@@ -17,6 +17,12 @@ export class ContainerComponent {
     768: { slidesPerView: 2, spaceBetween: 10 },
     1024: { slidesPerView: 3, spaceBetween: 10 },
   };
+  breaksPointts = {
+    320: { slidesPerView: 1, spaceBetween: 10 },
+    768: { slidesPerView: 2, spaceBetween: 10 },
+    1024: { slidesPerView: 3, spaceBetween: 10 },
+    1440: { slidesPerView: 5, spaceBetween: 10 },
+  };
   breaksPoints = {
     320: { slidesPerView: 2, spaceBetween: 10 },
     768: { slidesPerView: 6, spaceBetween: 10 },

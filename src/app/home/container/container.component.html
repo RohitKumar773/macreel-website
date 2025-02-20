@@ -10,13 +10,13 @@
     class="sliderBox">
     <ng-template swiperSlide>
       <div class="text">
-        <h3 data-aos="fade-up" data-aos-duration="1000">
+        <h3>
           Welcome to Macreel Infosoft
         </h3>
-        <h1 data-aos="fade-up" data-aos-duration="1000">
+        <h1>
           Software and Web Development Services in Noida
         </h1>
-        <h5 data-aos="fade-up" data-aos-duration="1000">
+        <h5>
           One stop solution for your business need! We help your business grow
           with great websites, <br />
           software, apps, and digital marketing. We're here only for you
@@ -24,7 +24,7 @@
         <button
           mat-raised-button
           (click)="openEnquiryForm()"
-          data-aos="fade-up">
+          >
           Enquiry
         </button>
       </div>
@@ -32,9 +32,9 @@
     </ng-template>
     <ng-template swiperSlide>
       <div class="text">
-        <h3>Digital Marketing Services</h3>
+        <h3 style="margin-bottom: -27px;">Digital Marketing Services</h3>
         <div class="title">
-          <h6 class="head_title">
+          <h6 class="head_title lh-normal">
             Success start here — let's make it happen together!
           </h6>
         </div>
@@ -142,7 +142,7 @@
       class="contents"
       id="image_content"
       data-aos="fade-left"
-      data-aos-duration="1000"
+     
     >
       <img
         src="assets/aboutus.webp"
@@ -264,7 +264,7 @@
   <!-- features for business code start from here  -->
 
   <div class="features">
-    <div class="title" data-aos="fade-up" data-aos-duration="1000">
+    <div class="title" >
       <h6 class="head_title">Top Features for Your Business Success</h6>
       <h4>
         Macreel Infosoft delivers Top-notch IT solutions with a focus on
@@ -336,7 +336,7 @@
   <!-- what we offer code start here  -->
   <div class="benifits">
     <div class="title">
-      <h6 data-aos="fade-up" class="head_title">Benefits We offer</h6>
+      <h6  class="head_title">Benefits We offer</h6>
     </div>
     <div class="containerss">
       <div class="buttons">
@@ -353,9 +353,8 @@
       <div class="content">
         <img
           [src]="features[selectedIndex].image"
-          alt="Feature Image"
-          
-        />
+          alt="Feature Image"/>
+
         <div class="text">
           <h2>{{ features[selectedIndex].title }}</h2>
           <p>{{ features[selectedIndex].description }}</p>
@@ -539,7 +538,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header lh-normal">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -566,7 +565,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header lh-normal">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -591,7 +590,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header lh-normal">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -617,7 +616,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header lh-normal">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -644,7 +643,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header lh-normal">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -775,7 +774,7 @@
         [spaceBetween]="10"
         [autoplay]="{ delay: 3000, disableOnInteraction: false }"
         [loop]="true"
-        [breakpoints]="breaksPoint"
+        [breakpoints]="breaksPointts"
         class="custom-swiper"
       >
         <ng-template swiperSlide>
@@ -842,10 +841,10 @@
 
   <div class="latest_portfolio">
     <div class="title">
-      <h6 data-aos="fade-up" data-aos-duration="1000" class="head_title">
+      <h6  class="head_title">
         Latest Portfolio
       </h6>
-      <h4 data-aos="fade-up" data-aos-duration="1000">
+      <h4 >
         At Macreel Infosoft, we pride ourselves on delivering cutting-edge IT
         solutions that drive innovation and <br />
         success for our clients. Our latest portfolio showcases our commitment

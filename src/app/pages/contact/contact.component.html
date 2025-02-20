@@ -12,15 +12,15 @@
       <p>
         <strong>Address</strong><br />
         Macreel Info Soft Pvt. Ltd.<br />
-        H 138, Infinity Business Park,<br />
-        Sector - 63, Noida, Uttar Pradesh 201301
+        H 138, Infinity Business Park,
+        Sector - 63, Noida,<br /> Uttar Pradesh 201301
       </p>
     </div>
     <mat-icon> email</mat-icon>
     <div class="info-item">
       <p>
         <strong>Mail Us</strong><br />
-        <a href="mailto:sales@macreel.co.in">salesmacreel.co.in</a>
+        <a href="mailto:sales@macreel.co.in">sales{{'@'}}macreel.co.in</a>
       </p>
     </div>
     <mat-icon> call</mat-icon>
@@ -41,17 +41,17 @@
 
   <!-- Reach Us Section -->
   <div class="contact-form">
-    <h2>Reach Us</h2>
+    <h2>Contact Us</h2>
     <form (submit)="onSubmit()">
+      <input type="text" placeholder="Enter your name" name="name" required />
       <div class="form-row">
-        <input type="text" placeholder="Enter your name" name="name" required />
         <input type="email" placeholder="Your Email" name="email" required />
       </div>
       <div class="form-row">
         <input type="text" placeholder="Phone" name="phone" />
-        <input type="text" placeholder="Project" name="project" />
       </div>
-      <input type="text" placeholder="Subject" name="subject" />
+      <input type="text" placeholder="Service" name="project" />
+      <!-- <input type="text" placeholder="Subject" name="subject" /> -->
       <textarea placeholder="Message here" name="message" rows="4"></textarea>
       <button type="submit">Send Message</button>
     </form>

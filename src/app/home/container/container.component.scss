@@ -1,6 +1,5 @@
 $card-bg-color: #ffffff;
 $card-border-radius: 16px;
-// $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 $text-color-primary: #555;
 $text-color-secondary: #777;
 $text-color-highlight: #00c853;
@@ -93,7 +92,7 @@ $font-family: Arial, sans-serif;
       height: 100%;
       float: left;
 
-      .title_content {
+      .title {
         width: 100%;
         height: auto;
         float: left;
@@ -103,14 +102,13 @@ $font-family: Arial, sans-serif;
           font-size: 30px;
           line-height: 40px;
         }
-        h6 {
+        h4 {
           font-weight: 400;
           font-size: 16px;
           text-align: justify;
           margin-top: 10px;
           line-height: 25px;
-          color: rgb(90, 89, 89);
-          font-weight: 500;
+          color: gray;
         }
       }
       .box_content_area {
@@ -155,7 +153,7 @@ $font-family: Arial, sans-serif;
               font-weight: 500;
               color: black;
             }
-            h6 {
+            h5 {
               font-size: 16px;
               line-height: 22px;
               color: gray;
@@ -354,7 +352,7 @@ $font-family: Arial, sans-serif;
     padding: 30px;
 
     img {
-      width: 40%;
+      max-width: 250px;
       height: 250px;
       border-radius: 10px;
     }
@@ -544,7 +542,7 @@ $font-family: Arial, sans-serif;
         flex-direction: column;
         align-items: center;
 
-        h1 {
+        h6 {
           font-weight: 600;
           font-size: 1.15rem;
           margin-top: 8px;
@@ -601,18 +599,16 @@ $font-family: Arial, sans-serif;
 
     .image {
       width: 90%;
-      height: 150px;
       border-radius: 1rem;
       overflow: hidden;
+      border-radius: 10px;
 
       img {
         width: 100%;
         transition: 0.4s;
-        object-fit: cover;
+        aspect-ratio: 16/9;
+        object-fit: contain;
       }
-    }
-    .image:hover img {
-      transform: scale(1.12);
     }
   }
 }
@@ -634,13 +630,12 @@ $font-family: Arial, sans-serif;
       width: 325px;
       height: 350px;
       overflow: auto;
-      border: none;
+      border: 6px solid rgb(219, 219, 219);
       border-radius: 1rem;
-      padding: 10px;
       outline: none;
 
       img {
-        width: 100%;
+        width: 99%;
         border-radius: 1rem;
       }
     }
@@ -842,6 +837,16 @@ $font-family: Arial, sans-serif;
   .containers {
     .experience {
       .contents {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: -8%;
+
+        .title {
+          h1 {
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
         .box_content_area {
           .boxes {
             width: 90%;
@@ -851,7 +856,7 @@ $font-family: Arial, sans-serif;
               h4 {
                 font-size: 20px;
               }
-              h6 {
+              h5 {
                 font-size: 15px;
               }
             }

@@ -7,7 +7,7 @@
       </a>
       <a href="mailto:sales@macreel.co.in">
         <mat-icon> email</mat-icon>
-        salesmacreel.co.in
+        sales{{ "@" }}macreel.co.in
       </a>
     </div>
     <div class="socail_media_links">
@@ -73,9 +73,9 @@
             Director Message
           </li>
           <li (click)="navigateTo('/home/pages/ourteam')">Our Team</li>
-          <li (click)="navigateTo('/home/pages/orgStructure')">
+          <!-- <li (click)="navigateTo('/home/pages/orgStructure')">
             Organization Structure
-          </li>
+          </li> -->
           <li (click)="navigateTo('/home/pages/visson')">Vision & Mission</li>
         </ul>
       </div>
@@ -90,7 +90,6 @@
           '/home/webdesign/responsiveWeb',
           '/home/webdesign/staticWeb',
           '/home/webdesign/dynamicWeb',
-          '/home/webdesign/customWeb',
           '/home/webdesign/webRedesign',
           '/home/webdesign/seoWeb'
         ])
@@ -119,9 +118,9 @@
           <li (click)="navigateTo('/home/webdesign/dynamicWeb')">
             Dynamic Web Designing
           </li>
-          <li (click)="navigateTo('/home/webdesign/customWeb')">
+          <!-- <li (click)="navigateTo('/home/webdesign/customWeb')">
             Custom Web Designing
-          </li>
+          </li> -->
           <li (click)="navigateTo('/home/webdesign/webRedesign')">
             Website Redesigning
           </li>
@@ -507,7 +506,12 @@
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-            <h2>Menu</h2>
+            <img
+              src="assets/macreel-new-logo.png"
+              alt="macreel logo"
+              width="50px"
+              height="50px"
+            />
           </h5>
           <button
             type="button"
@@ -550,7 +554,7 @@
                 style="margin-top: -13px"
               />
               About
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -567,13 +571,13 @@
               >
                 Our Team
               </li>
-              <li
+              <!-- <li
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 (click)="navigateTo('/home/pages/orgStructure')"
               >
                 Organization Structure
-              </li>
+              </li> -->
               <li
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
@@ -599,7 +603,7 @@
                 style="margin-top: -13px"
               />
               Website Designing
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -630,13 +634,13 @@
               >
                 Dynamic Web Designing
               </li>
-              <li
+              <!-- <li
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 (click)="navigateTo('/home/webdesign/customWeb')"
               >
                 Custom Web Designing
-              </li>
+              </li> -->
               <li
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
@@ -669,7 +673,7 @@
                 style="margin-top: -13px"
               />
               Web Development
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -713,7 +717,7 @@
                 style="margin-top: -13px"
               />
               Software Development
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -741,7 +745,7 @@
                 style="margin-top: -13px"
               />
               Mobile Application
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -774,7 +778,6 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
               (click)="navigateTo('/home/seo/seo_opt')"
-              
             >
               <img
                 src="assets/seo.gif"
@@ -784,7 +787,7 @@
                 style="margin-top: -13px"
               />
               SEO
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
@@ -861,7 +864,7 @@
                 style="margin-top: -13px"
               />
               Digital Marketing
-              <mat-icon style="float: right;">keyboard_arrow_down</mat-icon>
+              <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
               <li
