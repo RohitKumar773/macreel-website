@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -23,6 +24,12 @@ export class ContainerComponent {
     1024: { slidesPerView: 3, spaceBetween: 10 },
     1440: { slidesPerView: 5, spaceBetween: 10 },
   };
+  breaksPointtss = {
+    320: { slidesPerView: 1, spaceBetween: 10 },
+    768: { slidesPerView: 2, spaceBetween: 10 },
+    1024: { slidesPerView: 3, spaceBetween: 10 },
+    1440: { slidesPerView: 5, spaceBetween: 10 },
+  };
   breaksPoints = {
     320: { slidesPerView: 2, spaceBetween: 10 },
     768: { slidesPerView: 6, spaceBetween: 10 },
@@ -32,7 +39,8 @@ export class ContainerComponent {
   constructor(
     private dialog: MatDialog,
     private _meta: Meta,
-    private _title: Title
+    private _title: Title,
+    private router:Router
   ) {
     this._title.setTitle('Best Software Development Company- Macreel Infosoft');
     this._meta.addTags([
@@ -53,6 +61,11 @@ export class ContainerComponent {
       { name: 'robots', content: 'follow, index' },
       { name: 'og:type', content: 'website' },
     ]);
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+    scroll(0, 0);
   }
 
   selectedIndex: number = 0;

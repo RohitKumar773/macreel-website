@@ -545,11 +545,12 @@ $font-family: Arial, sans-serif;
         h6 {
           font-weight: 600;
           font-size: 1.15rem;
-          margin-top: 8px;
+          margin-top: 13px;
         }
         h4 {
           color: rgb(97, 97, 97);
-          margin-top: -20px;
+          margin-top: -12px;
+          font-size: 14px;
         }
 
         .links {
@@ -590,6 +591,9 @@ $font-family: Arial, sans-serif;
   height: 400px;
   float: left;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .sliding_area {
     width: 80%;
@@ -601,12 +605,11 @@ $font-family: Arial, sans-serif;
       width: 90%;
       border-radius: 1rem;
       overflow: hidden;
-      border-radius: 10px;
 
       img {
         width: 100%;
         transition: 0.4s;
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/8;
         object-fit: contain;
       }
     }
@@ -959,7 +962,7 @@ $font-family: Arial, sans-serif;
 
       .image {
         width: 95%;
-        height: 120px;
+        // height: 120px;
         margin-left: 2.5%;
       }
     }
