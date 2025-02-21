@@ -12,73 +12,52 @@
     </div>
     <div class="socail_media_links">
       <a href="https://www.facebook.com/Macreelinfosoftpvtltd" target="_blank">
-        <img src="assets/facebook.png" alt="macreel-facebook" title="Facebook"/>
+        <img src="assets/facebook.png" alt="macreel-facebook" title="Facebook" />
       </a>
       <a href="https://www.instagram.com/macreel_infosoft/" target="_blank">
-        <img src="assets/instagram.png" alt="macreel-infosoft" title="Instagram"/>
+        <img src="assets/instagram.png" alt="macreel-infosoft" title="Instagram" />
       </a>
-      <a
-        href="https://www.linkedin.com/company/macreel-infosoft-pvt-ltd/"
-        target="_blank"
-      >
-        <img src="assets/linkedin.png" alt="macreel-linkedin" title="Linkedin"/>
+      <a href="https://www.linkedin.com/company/macreel-infosoft-pvt-ltd/" target="_blank">
+        <img src="assets/linkedin.png" alt="macreel-linkedin" title="Linkedin" />
       </a>
       <a href="https://www.youtube.com/@macreelinfosoft563" target="_blank">
-        <img src="assets/youtube.png" alt="macreel-youtube" title="Youtube"/>
+        <img src="assets/youtube.png" alt="macreel-youtube" title="Youtube" />
       </a>
       <a href="https://in.pinterest.com/macreelinfo/" target="_blank">
-        <img src="assets/pinterest.png" alt="macreel-pinetrest" title="Pinetrest"/>
+        <img src="assets/pinterest.png" alt="macreel-pinetrest" title="Pinetrest" />
       </a>
-      <a
-        href="https://x.com/i/flow/login?redirect_after_login=%2FMacreel_Info"
-        target="_blank"
-      >
-        <img src="assets/twitter.png" alt="macreel-twitter" title="Twitter X"/>
+      <a href="https://x.com/i/flow/login?redirect_after_login=%2FMacreel_Info" target="_blank">
+        <img src="assets/twitter.png" alt="macreel-twitter" title="Twitter X" />
       </a>
       <a href="https://macreel-infosoft.blogspot.com/" target="_blank">
-        <img src="assets/blogger.png" alt="macreel-blog" title="Blogs"/>
+        <img src="assets/blogger.png" alt="macreel-blog" title="Blogs" />
       </a>
     </div>
   </div>
   <div class="menu_area">
     <div class="logo" (click)="navigateTo('/home')">
-      <img
-        src="assets/macreel-new-logo.png"
-        alt="Macreel Logo"
-        title="Macreel Infosoft Logo"
-      />
+      <img src="assets/macreel-new-logo.png" alt="Macreel Logo" title="Macreel Infosoft Logo" />
     </div>
 
     <div class="drop-downs" [class.active]="isActive('/home')" title="Home">
-      <img
-        src="../../../assets/home.gif"
-        alt="home"
-        (click)="navigateTo('/home')"
-        title="Home"
-      />
+      <img src="../../../assets/home.gif" alt="home" (click)="navigateTo('/home')" title="Home" />
       <span (click)="navigateTo('/home')">Home</span>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
-          '/home/pages',
+          '/home/pages/about',
           '/home/pages/directorMsg',
-          '/home/pages/ourteam'
+          '/home/pages/ourteam',
+          '/home/pages/visson'
         ])
-      "
-      title="About Macreel Infosoft"
-    >
-      <img src="assets/about.gif" alt="About Macreel" (click)="navigateTo('/home/pages')" title="About"/>
-      <span (click)="navigateTo('/home/pages')">About</span>
+      " title="About Macreel Infosoft">
+      <img src="assets/about.gif" alt="About Macreel" (click)="navigateTo('/home/pages/about')" title="About" />
+      <span (click)="navigateTo('/home/pages/about')">About</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li
-            (click)="navigateTo('/home/pages/directorMsg')"
-            title="Director Message"
-          >
+          <li (click)="navigateTo('/home/pages/directorMsg')" title="Director Message">
             Director Message
           </li>
           <li (click)="navigateTo('/home/pages/ourteam')" title="Our Team">
@@ -87,19 +66,14 @@
           <!-- <li (click)="navigateTo('/home/pages/orgStructure')">
             Organization Structure
           </li> -->
-          <li
-            (click)="navigateTo('/home/pages/visson')"
-            title="Vision and Mission"
-          >
+          <li (click)="navigateTo('/home/pages/visson')" title="Vision and Mission">
             Vision & Mission
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/webdesign/webdesign',
           '/home/webdesign/ecommerceWeb',
@@ -109,190 +83,114 @@
           '/home/webdesign/webRedesign',
           '/home/webdesign/seoWeb'
         ])
-      "
-      title="Web Design"
-    >
-      <img
-        src="assets/website.gif"
-        alt="Website Designing"
-        (click)="navigateTo('/home/webdesign/webdesign')"
-        title="Web Design"
-      />
-      <span (click)="navigateTo('/home/webdesign/webdesign')"
-        >Web Designing</span
-      >
+      " title="Web Design">
+      <img src="assets/website.gif" alt="Website Designing" (click)="navigateTo('/home/webdesign/webdesign')"
+        title="Web Design" />
+      <span (click)="navigateTo('/home/webdesign/webdesign')">Web Designing</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li
-            (click)="navigateTo('/home/webdesign/ecommerceWeb')"
-            title="Ecommerce Web Design"
-          >
+          <li (click)="navigateTo('/home/webdesign/ecommerceWeb')" title="Ecommerce Web Design">
             E - Commerce Web Designing
           </li>
-          <li
-            (click)="navigateTo('/home/webdesign/responsiveWeb')"
-            title="Responsive Web Design"
-          >
+          <li (click)="navigateTo('/home/webdesign/responsiveWeb')" title="Responsive Web Design">
             Responsive Web Designing
           </li>
-          <li
-            (click)="navigateTo('/home/webdesign/staticWeb')"
-            title="Static Web Design"
-          >
+          <li (click)="navigateTo('/home/webdesign/staticWeb')" title="Static Web Design">
             Static Web Designing
           </li>
-          <li
-            (click)="navigateTo('/home/webdesign/dynamicWeb')"
-            title="Dynamic Web Design"
-          >
+          <li (click)="navigateTo('/home/webdesign/dynamicWeb')" title="Dynamic Web Design">
             Dynamic Web Designing
           </li>
           <!-- <li (click)="navigateTo('/home/webdesign/customWeb')">
             Custom Web Designing
           </li> -->
-          <li
-            (click)="navigateTo('/home/webdesign/webRedesign')"
-            title="Website Redesign"
-          >
+          <li (click)="navigateTo('/home/webdesign/webRedesign')" title="Website Redesign">
             Website Redesigning
           </li>
-          <li
-            (click)="navigateTo('/home/webdesign/seoWeb')"
-            title="Website Redesign"
-          >
+          <li (click)="navigateTo('/home/webdesign/seoWeb')" title="Website Redesign">
             SEO Web Designing
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/webdevelopment/webDeve',
           '/home/webdevelopment/portalWeb',
           '/home/webdevelopment/custom_web',
           '/home/webdevelopment/cms_web'
         ])
-      "
-      title="Web Development"
-    >
-      <img
-        src="assets/software.gif"
-        alt="Web Development"
-        (click)="navigateTo('/home/webdevelopment/webDeve')"
-        title="Web Development"
-      />
-      <span (click)="navigateTo('/home/webdevelopment/webDeve')"
-        >Web Development</span
-      >
+      " title="Web Development">
+      <img src="assets/software.gif" alt="Web Development" (click)="navigateTo('/home/webdevelopment/webDeve')"
+        title="Web Development" />
+      <span (click)="navigateTo('/home/webdevelopment/webDeve')">Web Development</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li
-            (click)="navigateTo('/home/webdevelopment/portalWeb')"
-            title="Portal Web Development"
-          >
+          <li (click)="navigateTo('/home/webdevelopment/portalWeb')" title="Portal Web Development">
             Portal Web Development
           </li>
-          <li
-            (click)="navigateTo('/home/webdevelopment/custom_web')"
-            title="Custom Web Development">
+          <li (click)="navigateTo('/home/webdevelopment/custom_web')" title="Custom Web Development">
             Custom Webdevelopment
           </li>
-          <li
-            (click)="navigateTo('/home/webdevelopment/cms_web')"
-            title="CMS Web Development"
-          >
+          <li (click)="navigateTo('/home/webdevelopment/cms_web')" title="CMS Web Development">
             CMS Wev Development
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/softwaredevelopment/softwaredev',
           '/home/softwaredevelopment/crm'
         ])
-      "
-      title="Software Development"
-    >
-      <img
-        src="assets/software-development.gif"
-        alt="Software Development"
-        (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
-        title="Software Development"
-      />
+      " title="Software Development">
+      <img src="assets/software-development.gif" alt="Software Development"
+        (click)="navigateTo('/home/softwaredevelopment/softwaredev')" title="Software Development" />
       <span (click)="navigateTo('/home/softwaredevelopment/softwaredev')">
         Software Development
       </span>
 
       <div class="drop-down-menu">
         <ul style="width: 100px; border: none">
-          <li
-            (click)="navigateTo('/home/softwaredevelopment/crm')"
-            title="CRM Software"
-          >
+          <li (click)="navigateTo('/home/softwaredevelopment/crm')" title="CRM Software">
             CRM
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/mobiledevelopment/mobile_app',
           '/home/mobiledevelopment/android',
           '/home/mobiledevelopment/ios',
           '/home/mobiledevelopment/hybrid'
         ])
-      "
-      title="Mobile App Development"
-    >
-      <img
-        src="assets/mobile-application.gif"
-        alt="Mobile application Development"
-        (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
-        title="Mobile Application"
-      />
-      <span (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
-        >Mobile Application</span
-      >
+      " title="Mobile App Development">
+      <img src="assets/mobile-application.gif" alt="Mobile application Development"
+        (click)="navigateTo('/home/mobiledevelopment/mobile_app')" title="Mobile Application" />
+      <span (click)="navigateTo('/home/mobiledevelopment/mobile_app')">Mobile Application</span>
 
       <div class="drop-down-menu">
         <ul>
-          <li
-            (click)="navigateTo('/home/mobiledevelopment/android')"
-            title="Android App"
-          >
+          <li (click)="navigateTo('/home/mobiledevelopment/android')" title="Android App">
             Android App
           </li>
-          <li
-            (click)="navigateTo('/home/mobiledevelopment/ios')"
-            title="IOS App"
-          >
+          <li (click)="navigateTo('/home/mobiledevelopment/ios')" title="IOS App">
             Ios App
           </li>
-          <li
-            (click)="navigateTo('/home/mobiledevelopment/hybrid')"
-            title="Hybrid App"
-          >
+          <li (click)="navigateTo('/home/mobiledevelopment/hybrid')" title="Hybrid App">
             Hybrid App
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/seo/seo_opt',
           '/home/seo/onpage',
@@ -304,15 +202,9 @@
           '/home/seo/technicalseo',
           '/home/seo/videoseo'
         ])
-      "
-      title="Search Engine Optimization"
-    >
-      <img
-        src="assets/seo.gif"
-        (click)="navigateTo('/home/seo/seo_opt')"
-        alt="SEO Optimization"
-        title="SEO Optimization"
-      />
+      " title="Search Engine Optimization">
+      <img src="assets/seo.gif" (click)="navigateTo('/home/seo/seo_opt')" alt="SEO Optimization"
+        title="SEO Optimization" />
       <span (click)="navigateTo('/home/seo/seo_opt')">SEO</span>
 
       <div class="drop-down-menu">
@@ -335,9 +227,7 @@
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="
+    <div class="drop-downs" [class.active]="
         isActive([
           '/home/digitalmarketing/digitalmark',
           '/home/digitalmarketing/email_marketing',
@@ -363,18 +253,10 @@
           '/home/digitalmarketing/twiter_promo',
           '/home/digitalmarketing/linkedin_promo'
         ])
-      "
-      title="Digital Marketing"
-    >
-      <img
-        src="assets/degital-marketing.gif"
-        alt="Digital Marketing"
-        (click)="navigateTo('/home/digitalmarketing/digitalmark')"
-        title="Digital Marketing"
-      />
-      <span (click)="navigateTo('/home/digitalmarketing/digitalmark')"
-        >Digital Marketing</span
-      >
+      " title="Digital Marketing">
+      <img src="assets/degital-marketing.gif" alt="Digital Marketing"
+        (click)="navigateTo('/home/digitalmarketing/digitalmark')" title="Digital Marketing" />
+      <span (click)="navigateTo('/home/digitalmarketing/digitalmark')">Digital Marketing</span>
 
       <div class="drop-down-menu">
         <ul>
@@ -388,114 +270,82 @@
             Google Promotions
             <div class="google_drop_down">
               <ul>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_promo_service')
-                  "
-                >
+                  ">
                   Google Promotion Service
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_ranking_service')
-                  "
-                >
+                  ">
                   Google Ranking Service
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_branding_service')
-                  "
-                >
+                  ">
                   Google Branding Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_adword_prmo')
-                  "
-                >
+                  ">
                   Google Adwords Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_adword_company')
-                  "
-                >
+                  ">
                   Google Adwords Company
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_adword_service')
-                  "
-                >
+                  ">
                   Google Adwords Service
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/online_web_promo')
-                  "
-                >
+                  ">
                   Online Website Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/website_promo_comp')
-                  "
-                >
+                  ">
                   Website Promotion Company
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/promote_business_google')
-                  "
-                >
+                  ">
                   Promote Business On Google
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_paid_promo')
-                  "
-                >
+                  ">
                   Google Paid Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_search_promo')
-                  "
-                >
+                  ">
                   Google Search Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/web_promotion_comp')
-                  "
-                >
+                  ">
                   Web Promotion Company
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/seo_website_promo')
-                  "
-                >
+                  ">
                   SEO Website Promotion
                 </li>
-                <li
-                  (click)="navigateTo('/home/digitalmarketing/local_web_promo')"
-                >
+                <li (click)="navigateTo('/home/digitalmarketing/local_web_promo')">
                   Local Website Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_shoping_ad')
-                  "
-                >
+                  ">
                   Google Shoping Ads Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/goole_marketing_service')
-                  "
-                >
+                  ">
                   Google Marketing Service
                 </li>
               </ul>
@@ -506,33 +356,25 @@
 
             <div class="smo_dropdown">
               <ul>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/facebook_promotion')
-                  "
-                >
+                  ">
                   Facebook Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/google_plus_promo')
-                  "
-                >
+                  ">
                   Google Plus Promotion
                 </li>
-                <li
-                  (click)="
+                <li (click)="
                     navigateTo('/home/digitalmarketing/instagram_promotion')
-                  "
-                >
+                  ">
                   Instagram Promotion
                 </li>
                 <li (click)="navigateTo('/home/digitalmarketing/twiter_promo')">
                   Twitter Promotion
                 </li>
-                <li
-                  (click)="navigateTo('/home/digitalmarketing/linkedin_promo')"
-                >
+                <li (click)="navigateTo('/home/digitalmarketing/linkedin_promo')">
                   LinkedIn Promotion
                 </li>
               </ul>
@@ -542,120 +384,51 @@
       </div>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="isActive(['/home/pages/blogs'])"
-      title="Blogs"
-    >
-      <img
-        src="assets/blog.gif"
-        alt="Macreel Blog"
-        (click)="navigateTo('/home/pages/blogs')"
-        title="Blogs"
-      />
+    <div class="drop-downs" [class.active]="isActive(['/home/pages/blogs'])" title="Blogs">
+      <img src="assets/blog.gif" alt="Macreel Blog" (click)="navigateTo('/home/pages/blogs')" title="Blogs" />
       <span (click)="navigateTo('/home/pages/blogs')">Blog</span>
     </div>
 
-    <div
-      class="drop-downs"
-      [class.active]="isActive(['/home/pages/contact'])"
-      title="Contact us"
-    >
-      <img
-        src="assets/contact.gif"
-        alt="Contact Macreel"
-        (click)="navigateTo('/home/pages/contact')"
-        title="Contact"
-      />
+    <div class="drop-downs" [class.active]="isActive(['/home/pages/contact'])" title="Contact us">
+      <img src="assets/contact.gif" alt="Contact Macreel" title="Contact" (click)="navigateTo('/home/pages/contact')" />
       <span (click)="navigateTo('/home/pages/contact')">Contact US</span>
     </div>
 
     <div class="mobile_navigation">
-      <button
-        class="btn"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasScrolling"
-        aria-controls="offcanvasScrolling"
-      >
+      <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
         <mat-icon>menu</mat-icon>
       </button>
 
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-scroll="true"
-        data-bs-backdrop="false"
-        tabindex="-1"
-        id="offcanvasScrolling"
-        aria-labelledby="offcanvasScrollingLabel"
-      >
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-            <img
-              src="assets/macreel-new-logo.png"
-              alt="macreel logo"
-              width="50px"
-              height="50px"
-              title="Macreel Logo"
-            />
+            <img src="assets/macreel-new-logo.png" alt="macreel logo" width="50px" height="50px" title="Macreel Logo" />
           </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <div class="dropdown">
-            <button
-              (click)="navigateTo('/home')"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            >
-              <img
-                src="assets/home.gif"
-                alt="home"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Home"
-              />
+            <button (click)="navigateTo('/home')" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="assets/home.gif" alt="home" width="30px" height="30px" style="margin-top: -13px" title="Home" />
               Home
             </button>
           </div>
 
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/pages')"
-            >
-              <img
-                src="assets/about.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="About"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/pages')">
+              <img src="assets/about.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+                title="About" />
               About
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/pages/directorMsg')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/pages/directorMsg')">
                 Director Message
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/pages/ourteam')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/pages/ourteam')">
                 Our Team
               </li>
               <!-- <li
@@ -665,61 +438,31 @@
               >
                 Organization Structure
               </li> -->
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/pages/visson')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/pages/visson')">
                 Vision & Mission
               </li>
             </ul>
           </div>
+
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/webdesign/webdesign')"
-            >
-              <img
-                src="assets/website.gif"
-                alt="website designing"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Website Designing"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/webdesign/webdesign')">
+              <img src="assets/website.gif" alt="website designing" width="30px" height="30px" style="margin-top: -13px"
+                title="Website Designing" />
               Website Designing
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/ecommerceWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/ecommerceWeb')">
                 Ecommerce Web Designing
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/responsiveWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/responsiveWeb')">
                 Responsive Web Designing
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/staticWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/staticWeb')">
                 Static Web Designing
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/dynamicWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/dynamicWeb')">
                 Dynamic Web Designing
               </li>
               <!-- <li
@@ -729,413 +472,223 @@
               >
                 Custom Web Designing
               </li> -->
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/webRedesign')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/webRedesign')">
                 Website Redesigning
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdesign/seoWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdesign/seoWeb')">
                 SEO Web Designing
               </li>
             </ul>
           </div>
+
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/webdevelopment/webDeve')"
-            >
-              <img
-                src="assets/software.gif"
-                alt="software"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Web Development"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/webdevelopment/webDeve')">
+              <img src="assets/software.gif" alt="software" width="30px" height="30px" style="margin-top: -13px"
+                title="Web Development" />
               Web Development
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdevelopment/portalWeb')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdevelopment/portalWeb')">
                 Portal Web Development
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdevelopment/custom_web')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('/home/webdevelopment/custom_web')">
                 Custom Web Development
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/webdevelopment/cms_web')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/webdevelopment/cms_web')">
                 CMS Web Development
               </li>
             </ul>
           </div>
+
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-              (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
-            >
-              <img
-                src="assets/software-development.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Software Development"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              data-bs-dismiss="offcanvas" aria-label="Close"
+              (click)="navigateTo('/home/softwaredevelopment/softwaredev')">
+              <img src="assets/software-development.gif" alt="about" width="30px" height="30px"
+                style="margin-top: -13px" title="Software Development" />
               Software Development
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/softwaredevelopment/crm')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/softwaredevelopment/crm')">
                 CRM
               </li>
             </ul>
           </div>
+
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
-            >
-              <img
-                src="assets/mobile-application.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Mobile Application"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/mobiledevelopment/mobile_app')">
+              <img src="assets/mobile-application.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+                title="Mobile Application" />
               Mobile Application
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/mobiledevelopment/android')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('/home/mobiledevelopment/android')">
                 Android App
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/mobiledevelopment/ios')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/mobiledevelopment/ios')">
                 IOS App
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/mobiledevelopment/hybrid')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/mobiledevelopment/hybrid')">
                 Hybrid
               </li>
             </ul>
           </div>
+
           <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/seo/seo_opt')"
-            >
-              <img
-                src="assets/seo.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="SEO"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/seo/seo_opt')">
+              <img src="assets/seo.gif" alt="about" width="30px" height="30px" style="margin-top: -13px" title="SEO" />
               SEO
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/onpage')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/onpage')">
                 On Page Optimization
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/offpage')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/offpage')">
                 Off Page Optimization
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/link_building')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/link_building')">
                 Link Building Service
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/appstore')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/appstore')">
                 App Store Optimization
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/ecommerce')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/ecommerce')">
                 E - commerce SEO
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/local_seo')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/local_seo')">
                 Local SEO
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/technicalseo')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/technicalseo')">
                 Technical SEO
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/seo/videoseo')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/seo/videoseo')">
                 Video SEO
               </li>
             </ul>
           </div>
           <div class="dropup">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              (click)="navigateTo('/home/digitalmarketing/digitalmark')"
-            >
-              <img
-                src="assets/degital-marketing.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Digital Marketing"
-              />
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              (click)="navigateTo('/home/digitalmarketing/digitalmark')">
+              <img src="assets/degital-marketing.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+                title="Digital Marketing" />
               Digital Marketing
               <mat-icon style="float: right">keyboard_arrow_down</mat-icon>
             </button>
             <ul class="dropdown-menu">
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="navigateTo('/home/digitalmarketing/email_marketing')"
-              >
+              <li data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="navigateTo('/home/digitalmarketing/email_marketing')">
                 Email Marketing
               </li>
-              <li
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                (click)="
+              <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                   navigateTo('/home/digitalmarketing/internet_marketing')
-                "
-              >
+                ">
                 Internet Marketing
               </li>
               <li>
                 Google Promotion
                 <div class="google_promo">
                   <ul>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/google_promo_service'
                         )
-                      "
-                    >
+                      ">
                       Google Promotion Service
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/google_ranking_service'
                         )
-                      "
-                    >
+                      ">
                       Google Ranking Service
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/google_branding_service'
                         )
-                      "
-                    >
+                      ">
                       Google Branding Service
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/google_adword_prmo')
-                      "
-                    >
+                      ">
                       Google Adwords Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/google_adword_company'
                         )
-                      "
-                    >
+                      ">
                       Google Adword Company
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/google_adword_service'
                         )
-                      "
-                    >
+                      ">
                       Google Adword Service
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/online_web_promo')
-                      "
-                    >
+                      ">
                       Online Website Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/website_promo_comp')
-                      "
-                    >
+                      ">
                       Website Promotion Company
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/promote_business_google'
                         )
-                      "
-                    >
+                      ">
                       Promote Business On Google
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/google_paid_promo')
-                      "
-                    >
+                      ">
                       Google Paid Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/google_search_promo')
-                      "
-                    >
+                      ">
                       Google Search Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/web_promotion_comp')
-                      "
-                    >
+                      ">
                       Web Promotion Company
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/seo_website_promo')
-                      "
-                    >
+                      ">
                       SEO Website Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/local_web_promo')
-                      "
-                    >
+                      ">
                       Local Website Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/google_shoping_ad')
-                      "
-                    >
+                      ">
                       Google Shoping Ads Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo(
                           '/home/digitalmarketing/goole_marketing_service'
                         )
-                      "
-                    >
+                      ">
                       Google Marketing Service
                     </li>
                   </ul>
@@ -1145,49 +698,29 @@
                 SMO Service
                 <div class="smo_dropdown">
                   <ul>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/facebook_promotion')
-                      "
-                    >
+                      ">
                       Facebook Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/google_plus_promo')
-                      "
-                    >
+                      ">
                       Google Plus Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/instagram_promotion')
-                      "
-                    >
+                      ">
                       Instagram Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/twiter_promo')
-                      "
-                    >
+                      ">
                       Twitter Promotion
                     </li>
-                    <li
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                      (click)="
+                    <li data-bs-dismiss="offcanvas" aria-label="Close" (click)="
                         navigateTo('/home/digitalmarketing/linkedin_promo')
-                      "
-                    >
+                      ">
                       LinkedIn Promotion
                     </li>
                   </ul>
@@ -1196,36 +729,16 @@
             </ul>
           </div>
           <div class="dropdown">
-            <button
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-              (click)="navigateTo('/home/pages/blogs')"
-            >
-              <img
-                src="assets/blog.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Blog"
-              />
+            <button data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/pages/blogs')">
+              <img src="assets/blog.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+                title="Blog" />
               Blog
             </button>
           </div>
           <div class="dropdown">
-            <button
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-              (click)="navigateTo('/home/pages/contact')"
-            >
-              <img
-                src="assets/contact.gif"
-                alt="about"
-                width="30px"
-                height="30px"
-                style="margin-top: -13px"
-                title="Contact"
-              />
+            <button data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/home/pages/contact')">
+              <img src="assets/contact.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+                title="Contact" />
               Contact
             </button>
           </div>
@@ -1238,11 +751,7 @@
 <div class="shortcuts">
   <div class="boxes">
     <a href="https://wa.me/918368648746" target="_blank">
-      <img
-        src="assets/macreelwhatshapp.png"
-        alt="Chat on Whatshapp"
-        title="Chat on Whatshapp"
-      />
+      <img src="assets/macreelwhatshapp.png" alt="Chat on Whatshapp" title="Chat on Whatshapp" />
     </a>
   </div>
   <div class="boxes" (click)="scrollOnTop()" title="Go to Top">

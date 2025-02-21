@@ -8,13 +8,16 @@ $font-family: Arial, sans-serif;
 ::-webkit-scrollbar {
   width: 4px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 8px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -51,6 +54,7 @@ $font-family: Arial, sans-serif;
         font-size: 1.4rem;
         font-weight: 500;
       }
+
       h5 {
         font-size: 1.1rem;
         line-height: 30px;
@@ -67,6 +71,7 @@ $font-family: Arial, sans-serif;
         transition: 0.4s;
         margin-top: 20px;
       }
+
       button:hover {
         background-color: #00b36b;
         color: white;
@@ -101,6 +106,7 @@ $font-family: Arial, sans-serif;
           font-size: 30px;
           line-height: 40px;
         }
+
         h4 {
           font-weight: 400;
           font-size: 16px;
@@ -110,6 +116,7 @@ $font-family: Arial, sans-serif;
           color: gray;
         }
       }
+
       .box_content_area {
         width: 100%;
         height: auto;
@@ -135,6 +142,7 @@ $font-family: Arial, sans-serif;
               font-size: 50px;
             }
           }
+
           button {
             width: 150px;
             height: 45px;
@@ -143,6 +151,7 @@ $font-family: Arial, sans-serif;
             border-radius: 2rem;
             margin-left: 50px;
           }
+
           .box_title {
             width: 100%;
             height: 50px;
@@ -152,6 +161,7 @@ $font-family: Arial, sans-serif;
               font-weight: 500;
               color: black;
             }
+
             h5 {
               font-size: 16px;
               line-height: 22px;
@@ -161,6 +171,7 @@ $font-family: Arial, sans-serif;
         }
       }
     }
+
     #image_content {
       width: 40%;
 
@@ -172,6 +183,7 @@ $font-family: Arial, sans-serif;
         object-fit: cover;
         margin-top: 5%;
       }
+
       #graph_img {
         height: 200px;
       }
@@ -203,16 +215,19 @@ $font-family: Arial, sans-serif;
           color: white;
           border: none;
         }
+
         .card-title {
           font-size: 1.25rem;
           font-weight: 500;
         }
+
         .card-text {
           font-size: 15px;
           font-weight: 400;
           line-height: 25px;
           color: gray;
         }
+
         p {
           display: -webkit-box;
           -webkit-line-clamp: 3;
@@ -222,6 +237,7 @@ $font-family: Arial, sans-serif;
           white-space: normal;
         }
       }
+
       .card:hover {
         color: #00d084;
         overflow: hidden;
@@ -269,6 +285,7 @@ $font-family: Arial, sans-serif;
           font-weight: 500;
           line-height: 25px;
         }
+
         .card-text {
           line-height: 25px;
           display: -webkit-box;
@@ -279,6 +296,7 @@ $font-family: Arial, sans-serif;
           white-space: normal;
         }
       }
+
       .card:hover {
         color: #00b36b;
         transition: 0.4s;
@@ -286,6 +304,7 @@ $font-family: Arial, sans-serif;
     }
   }
 }
+
 .containerss {
   display: flex;
   gap: 20px;
@@ -359,6 +378,7 @@ $font-family: Arial, sans-serif;
         font-size: 24px;
         font-weight: bold;
       }
+
       p {
         font-size: 16px;
         line-height: 30px;
@@ -392,6 +412,7 @@ $font-family: Arial, sans-serif;
           text-transform: capitalize;
           line-height: 25px;
         }
+
         p {
           padding: 5px;
           font-size: 1rem;
@@ -405,6 +426,7 @@ $font-family: Arial, sans-serif;
         }
       }
     }
+
     .card:hover {
       color: #00b36b;
       cursor: pointer;
@@ -428,6 +450,7 @@ $font-family: Arial, sans-serif;
       font-weight: 500;
     }
   }
+
   .question_area {
     width: 50%;
     height: auto;
@@ -442,6 +465,7 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .image_area {
     width: 50%;
     height: 550px;
@@ -455,6 +479,7 @@ $font-family: Arial, sans-serif;
     }
   }
 }
+
 .our_products {
   width: 100%;
   height: auto;
@@ -524,6 +549,7 @@ $font-family: Arial, sans-serif;
           border-bottom-left-radius: 1rem;
         }
       }
+
       .details {
         width: 100%;
         height: calc(100% - 80%);
@@ -538,6 +564,7 @@ $font-family: Arial, sans-serif;
           font-size: 1.15rem;
           margin-top: 13px;
         }
+
         h4 {
           color: rgb(97, 97, 97);
           margin-top: -12px;
@@ -567,6 +594,7 @@ $font-family: Arial, sans-serif;
               opacity: 0.8;
               transition: 0.2s;
             }
+
             img:hover {
               opacity: 1;
             }
@@ -633,6 +661,7 @@ $font-family: Arial, sans-serif;
     }
   }
 }
+
 .premium_client {
   width: 100%;
   height: 300px;
@@ -661,6 +690,7 @@ $font-family: Arial, sans-serif;
     }
   }
 }
+
 .testimonials {
   width: 100%;
   height: auto;
@@ -763,15 +793,18 @@ $font-family: Arial, sans-serif;
   .containers {
     .sliderBox {
       height: 400px;
+
       .text {
         h1 {
           font-size: 1.4rem;
           line-height: 25px;
           font-weight: 500;
         }
+
         h3 {
           font-size: 1rem;
         }
+
         h5 {
           display: none;
         }
@@ -800,9 +833,11 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .buttons {
     width: 80%;
   }
+
   .faq_area {
     .question_area {
       width: 100%;
@@ -824,6 +859,7 @@ $font-family: Arial, sans-serif;
     }
   }
 }
+
 @media (max-width: 780px) and (min-width: 0px) {
   .containers {
     .experience {
@@ -838,6 +874,7 @@ $font-family: Arial, sans-serif;
             line-height: 30px;
           }
         }
+
         .box_content_area {
           .boxes {
             width: 90%;
@@ -847,6 +884,7 @@ $font-family: Arial, sans-serif;
               h4 {
                 font-size: 20px;
               }
+
               h5 {
                 font-size: 15px;
               }
@@ -854,6 +892,7 @@ $font-family: Arial, sans-serif;
           }
         }
       }
+
       #image_content {
         width: 80%;
 
@@ -864,6 +903,7 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .faq_area {
     .image_area {
       width: 80%;
@@ -877,6 +917,7 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .benifits {
     .containerss {
       display: flex;
@@ -885,6 +926,7 @@ $font-family: Arial, sans-serif;
       .buttons {
         width: 100%;
       }
+
       .content {
         width: 100%;
         display: flex;
@@ -898,12 +940,14 @@ $font-family: Arial, sans-serif;
         h2 {
           text-align: center;
         }
+
         p {
           text-align: center;
         }
       }
     }
   }
+
   .blogs_aera {
     .blog_swiper {
       width: 80%;
@@ -914,15 +958,20 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .title {
     padding: 20px;
+
     br {
       display: none;
     }
-    h1 {
+
+    h1,h6 {
       font-size: 1.5rem;
+      line-height: 27px;
     }
   }
+
   .latest_portfolio {
     height: auto;
     margin-top: -10px;
@@ -935,12 +984,15 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .premium_client {
     margin-top: 0px;
   }
+
   .testimonials {
     margin-top: 40px;
   }
+
   .trending_technology {
     height: auto;
     margin-top: 20px;
@@ -955,14 +1007,30 @@ $font-family: Arial, sans-serif;
       }
     }
   }
+
   .containers {
     .services {
       .card_area {
         width: 90%;
         margin-left: 5%;
+
         .card {
           width: auto;
+          margin-top: 20px;
         }
+      }
+    }
+  }
+
+  .our_team {
+
+    .team_card_area {
+      width: 100%;
+      margin-left: 0;
+
+      .team_card {
+        width: 280px;
+        margin-top: 25px;
       }
     }
   }

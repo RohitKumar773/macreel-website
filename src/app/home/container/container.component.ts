@@ -40,7 +40,7 @@ export class ContainerComponent {
     private dialog: MatDialog,
     private _meta: Meta,
     private _title: Title,
-    private router:Router
+    private router: Router
   ) {
     this._title.setTitle('Best Software Development Company- Macreel Infosoft');
     this._meta.addTags([
@@ -56,10 +56,37 @@ export class ContainerComponent {
       {
         name: 'keywords',
         content:
-          'Website Designing, Website Designing In Delhi, Web Designing Company Delhi, Website Designing Company Noida, Website Development Company In Noida, Best Website Designing Company  In India, Website Designing Services In Noida, Responsive Website Designing Company In Delhi, Ecommerce Website Designing Company In Delhi, Website Designing Company In India, Website Designing Company In Noida, Best Seo Services In Delhi, Web Development Company In Delhi, Web Development Company In India  Software Development Company in Noida  App Development Compnay in Noida  Digital Marketing Services SEO Services in Noida',
+          'Website Designing, Website Designing In Delhi, Web Designing Company Delhi, Website Designing Company Noida, Website Development Company In Noida Best Website Designing Company  In India, Website Designing Services In Noida, Responsive Website Designing Company In Delhi, Ecommerce Website Designing Company In Delhi, Website Designing Company In India, Website Designing Company In Noida, Best Seo Services In Delhi, Web Development Company In Delhi, Web Development Company In India  Software Development Company in Noida  App Development Compnay in Noida Digital Marketing Services SEO Services in Noida',
       },
       { name: 'robots', content: 'follow, index' },
       { name: 'og:type', content: 'website' },
+      { name: 'og:site_name', content: 'Macreel Infosoft Pvt. Ltd.' },
+      { name: 'og:url', content: 'https://macreel.co.in/' },
+      {
+        name: 'og:title',
+        content: 'Top IT Services Company in Noida |Website Designing Company',
+      },
+      {
+        name: 'og:description',
+        content:
+          'Macreel Infosoft is Top IT Services Company in Noida, India. Get Responsive Website Design, SEO Services, Digital Marketing, Software Development, and App Development.',
+      },
+      {
+        name: 'og:image',
+        content: 'https://macreel.co.in/img/macreel-new-logo.png',
+      },
+      { property: 'Website:tag', content: 'Macreel Infosoft Pvt. Ltd.' },
+      { property: 'Website:section', content: 'India' },
+      { property: 'fb:profile_id', content: 'Macreel Infosoft Pvt. Ltd.' },
+      { name: 'twitter:site', content: '@Macreel_Info' },
+      { name: 'twitter:creator', content: '@Macreel_Info' },
+      { name: 'twitter:title', content: 'Macreel Infosoft Pvt. Ltd.' },
+      {
+        name: 'twitter:description',
+        content:
+          'Macreel Infosoft Pvt. Ltd. is a Digital Marketing, Website Designing, Software and Mobile App development Company based at Noida',
+      },
+      { name: 'description', content: '' },
     ]);
   }
 
