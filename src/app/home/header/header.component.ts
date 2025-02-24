@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   navigateTo(path: string) {
-    debugger
+    console.log("path ", path);
     this.router.navigate([path]);
     scroll(0, 0);
   }
@@ -27,7 +27,7 @@ export class HeaderComponent {
     }
     return false;
   }
-  
+
 
 
 }
