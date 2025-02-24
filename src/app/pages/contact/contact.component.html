@@ -42,18 +42,18 @@
   <!-- Reach Us Section -->
   <div class="contact-form">
     <h2>Contact Us</h2>
-    <form (submit)="onSubmit()">
-      <input type="text" placeholder="Enter your name" name="name" required />
+    <form [formGroup]="contactForm">
+      <input type="text" placeholder="Enter your name" name="name" required formControlName="name" />
       <div class="form-row">
-        <input type="email" placeholder="Your Email" name="email" required />
+        <input type="email" placeholder="Your Email" name="email" required formControlName="email" />
       </div>
       <div class="form-row">
-        <input type="text" placeholder="Phone" name="phone" />
+        <input type="number" placeholder="Phone" name="phone" formControlName="phone" />
       </div>
-      <input type="text" placeholder="Service" name="project" />
+      <input type="text" placeholder="Service" name="project" formControlName="service" />
       <!-- <input type="text" placeholder="Subject" name="subject" /> -->
-      <textarea placeholder="Message here" name="message" rows="4"></textarea>
-      <button type="submit">Send Message</button>
+      <textarea placeholder="Message here" name="message" rows="4" formControlName="subject"></textarea>
+      <button type="submit" (click)="sendContact()">Send Message</button>
     </form>
   </div>
 </div>

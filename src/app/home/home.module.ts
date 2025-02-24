@@ -13,7 +13,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatTreeModule} from '@angular/material/tree';
+import { MatTreeModule } from '@angular/material/tree';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,13 @@ import {MatTreeModule} from '@angular/material/tree';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTreeModule
+    MatTreeModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    
   ],
 })
-export class HomeModule {}
+export class HomeModule { }

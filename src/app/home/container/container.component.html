@@ -1,13 +1,6 @@
 <div class="containers">
-  <swiper
-    [spaceBetween]="10"
-    [centeredSlides]="true"
-    [autoplay]="{ delay: 5000, disableOnInteraction: false }"
-    [pagination]="{ clickable: true, dynamicBullets: true }"
-    [grabCursor]="true"
-    [loop]="true"
-    class="sliderBox"
-  >
+  <swiper [spaceBetween]="10" [centeredSlides]="true" [autoplay]="{ delay: 5000, disableOnInteraction: false }"
+    [pagination]="{ clickable: true, dynamicBullets: true }" [grabCursor]="true" [loop]="true" class="sliderBox">
     <ng-template swiperSlide>
       <div class="text">
         <h3>Welcome to Macreel Infosoft</h3>
@@ -17,46 +10,34 @@
           with great websites, <br />
           software, apps, and digital marketing. We're here only for you
         </h5>
-        <button
-          mat-raised-button
-          (click)="openEnquiryForm()"
-          title="Enquiry Now"
-        >
+        <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
           Enquiry
         </button>
       </div>
-      <img
-        src="../../../assets/carousel-4.webp"
-        alt="Slider image"
-        title="Macreel Slider"
-      />
+      <img src="../../../assets/carousel-4.webp" alt="Slider image" title="Macreel Slider" />
     </ng-template>
     <ng-template swiperSlide>
       <div class="text">
-        <h3 style="margin-bottom: -27px">Digital Marketing Services</h3>
+        <h3>Digital Marketing Services</h3>
+        <h1 class="head_title lh-normal">
+          Success start here — let's make it happen together!
+        </h1>
+        <!-- <h3 style="margin-bottom: -27px">Digital Marketing Services</h3>
         <div class="title">
           <h6 class="head_title lh-normal">
             Success start here — let's make it happen together!
           </h6>
-        </div>
+        </div> -->
         <h5>
           We'll make sure your business stands out, reaches the right audience
           and drives real results. <br />
           Let the world see your brand shine across all platforms.
         </h5>
-        <button
-          mat-raised-button
-          (click)="openEnquiryForm()"
-          title="Enquiry Now"
-        >
+        <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
           Enquiry
         </button>
       </div>
-      <img
-        src="../../../assets/carousel-4.webp"
-        alt="Slider image"
-        title="Macreel Slider"
-      />
+      <img src="../../../assets/carousel-3.webp" alt="Slider image" title="Macreel Slider" />
     </ng-template>
   </swiper>
 
@@ -150,17 +131,8 @@
       </div>
     </div>
     <div class="contents" id="image_content" data-aos="fade-left">
-      <img
-        src="../../../assets/aboutus.webp"
-        alt="macreel-infosoft-about"
-        title="macreel-infosoft-about"
-      />
-      <img
-        src="../../../assets/graph.png"
-        alt="Graph image"
-        id="graph_img"
-        title="graph"
-      />
+      <img src="../../../assets/aboutus.webp" alt="macreel-infosoft-about" title="macreel-infosoft-about" />
+      <img src="../../../assets/graph.png" alt="Graph image" id="graph_img" title="graph" />
     </div>
   </div>
 
@@ -182,12 +154,7 @@
     </div>
     <div class="card_area">
       <div class="card">
-        <img
-          src="assets/webdesign.gif"
-          class="card-img-top"
-          alt="Website Designing"
-          title="Website Designing"
-        />
+        <img src="../../../assets/webdesign.gif" class="card-img-top" alt="Website Designing" title="Website Designing" />
         <div class="card-body">
           <h5 class="card-title">Website Designing</h5>
           <p class="card-text">
@@ -202,12 +169,8 @@
       </div>
 
       <div class="card">
-        <img
-          src="assets/website-development.gif"
-          class="card-img-top"
-          alt="Website Development"
-          title="Website Development"
-        />
+        <img src="../../../assets/website-development.gif" class="card-img-top" alt="Website Development"
+          title="Website Development" />
         <div class="card-body">
           <h5 class="card-title">Website Development</h5>
           <p class="card-text">
@@ -215,22 +178,15 @@
             development is essential. At Macreel Infosoft Pvt. Ltd., we love
             creating digital solutions, SEO friendly that fit your needs...
           </p>
-          <button
-            class="btn"
-            (click)="navigateTo('/home/webdevelopment/webDeve')"
-          >
+          <button class="btn" (click)="navigateTo('/home/webdevelopment/webDeve')">
             Learn More
           </button>
         </div>
       </div>
 
       <div class="card">
-        <img
-          src="assets/software-dev.gif"
-          class="card-img-top"
-          alt="Software Development"
-          title="Software Development"
-        />
+        <img src="../../../assets/software-dev.gif" class="card-img-top" alt="Software Development"
+          title="Software Development" />
         <div class="card-body">
           <h5 class="card-title">Software Development</h5>
           <p class="card-text">
@@ -238,22 +194,15 @@
             solutions for a variety of clients. With our team's expertise and
             the latest technologies, we deliver custom software...
           </p>
-          <button
-            class="btn"
-            (click)="navigateTo('/home/softwaredevelopment/softwaredev')"
-          >
+          <button class="btn" (click)="navigateTo('/home/softwaredevelopment/softwaredev')">
             Learn More
           </button>
         </div>
       </div>
 
       <div class="card">
-        <img
-          src="assets/mobileapp.gif"
-          class="card-img-top"
-          alt="Mobile App Development"
-          title="Mobile App Development"
-        />
+        <img src="../../../assets/mobileapp.gif" class="card-img-top" alt="Mobile App Development"
+          title="Mobile App Development" />
         <div class="card-body">
           <h5 class="card-title">Mobile App Development</h5>
           <p class="card-text">
@@ -261,22 +210,15 @@
             Android and iOS mobile applications play a crucial role. We are the
             Best Mobile App Development Company in Noida, India...
           </p>
-          <button
-            class="btn"
-            (click)="navigateTo('/home/mobiledevelopment/mobile_app')"
-          >
+          <button class="btn" (click)="navigateTo('/home/mobiledevelopment/mobile_app')">
             Learn More
           </button>
         </div>
       </div>
 
       <div class="card">
-        <img
-          src="assets/digital-marketing.gif"
-          class="card-img-top"
-          alt="Digital Marketing"
-          title="Digital Marketing"
-        />
+        <img src="../../../assets/digital-marketing.gif" class="card-img-top" alt="Digital Marketing"
+          title="Digital Marketing" />
         <div class="card-body">
           <h5 class="card-title">Digital Marketing</h5>
           <p class="card-text">
@@ -285,22 +227,15 @@
             attract customers to your website with SEO and keep them engaged
             with your brand through SMO...
           </p>
-          <button
-            class="btn"
-            (click)="navigateTo('/home/digitalmarketing/digitalmark')"
-          >
+          <button class="btn" (click)="navigateTo('/home/digitalmarketing/digitalmark')">
             Learn More
           </button>
         </div>
       </div>
 
       <div class="card">
-        <img
-          src="assets/seo-service.gif"
-          class="card-img-top"
-          alt="SEO Optimization"
-          title="Search Engine Optimization"
-        />
+        <img src="../../../assets/seo-service.gif" class="card-img-top" alt="SEO Optimization"
+          title="Search Engine Optimization" />
         <div class="card-body">
           <h5 class="card-title">SEO</h5>
           <p class="card-text">
@@ -397,21 +332,14 @@
     </div>
     <div class="containerss">
       <div class="buttons">
-        <button
-          *ngFor="let item of features; let i = index"
-          [ngClass]="{ active: selectedIndex === i }"
-          (click)="selectFeature(i)"
-        >
+        <button *ngFor="let item of features; let i = index" [ngClass]="{ active: selectedIndex === i }"
+          (click)="selectFeature(i)">
           {{ item.name }}
         </button>
       </div>
 
       <div class="content">
-        <img
-          [src]="features[selectedIndex].image"
-          alt="Feature Image"
-          title="Macreel Feature"
-        />
+        <img [src]="features[selectedIndex].image" alt="Feature Image" title="Macreel Feature" />
 
         <div class="text">
           <h2>{{ features[selectedIndex].title }}</h2>
@@ -436,22 +364,12 @@
     </div>
 
     <div class="blog_swiper">
-      <swiper
-        [slidesPerView]="3"
-        [spaceBetween]="10"
-        [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-        [loop]="true"
-        [breakpoints]="breaksPoint"
-        class="custom-swiper"
-      >
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPoint" class="custom-swiper">
         <ng-template swiperSlide>
           <div class="card">
-            <img
-              src="assets/e-commerce.png"
-              class="card-img-top"
-              alt="Top Ecommerce Website Development"
-              title="Top Ecommerce Website Development"
-            />
+            <img src="../../../assets/e-commerce.png" class="card-img-top" alt="Top Ecommerce Website Development"
+              title="Top Ecommerce Website Development" />
             <div class="card-body">
               <h6 class="card-title">
                 Top e-commerce Website Dvelopment Company in 2024.
@@ -470,12 +388,8 @@
         </ng-template>
         <ng-template swiperSlide>
           <div class="card">
-            <img
-              src="assets/web-app.png"
-              class="card-img-top"
-              alt="Dropshipping App Development"
-              title="Dropshipping App Development"
-            />
+            <img src="../../../assets/web-app.png" class="card-img-top" alt="Dropshipping App Development"
+              title="Dropshipping App Development" />
             <div class="card-body">
               <h6 class="card-title">
                 How to develop a custom Dropshipping App everything you need to
@@ -493,12 +407,8 @@
         </ng-template>
         <ng-template swiperSlide>
           <div class="card">
-            <img
-              src="assets/mobile-apps.png"
-              class="card-img-top"
-              alt="Web Application Development"
-              title="Web Application Development"
-            />
+            <img src="../../../assets/mobile-apps.png" class="card-img-top" alt="Web Application Development"
+              title="Web Application Development" />
             <div class="card-body">
               <h6 class="card-title">
                 A complete guide to web application development: Types
@@ -532,22 +442,12 @@
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               1. What services does Macreel Infosoft Pvt. Ltd. offer?
             </button>
           </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               We provide a range of IT solutions including website design and
               development, custom software solutions, mobile app development,
@@ -559,23 +459,13 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               2. What is the process for starting website development project
               with Macreel Infosoft?
             </button>
           </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Our website development process involves an initial consultation
               to understand your needs, followed by planning and design phases.
@@ -587,22 +477,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
               3. Can you help with website maintenance and updates?
             </button>
           </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Yes, we offer ongoing website maintenance and support services.
               Whether you need regular updates, ecurity enhacements, or
@@ -613,22 +493,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour"
-              aria-expanded="false"
-              aria-controls="flush-collapseFour"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
               4. Do you offer custom software solutions?
             </button>
           </h2>
-          <div
-            id="flush-collapseFour"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Absolutly! We specialize in creating custom software tailored to
               your specific business needs. Whether you require a new
@@ -640,22 +510,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive"
-              aria-expanded="false"
-              aria-controls="flush-collapseFive"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
               5. What is digital marketing , and how can it benefit my business?
             </button>
           </h2>
-          <div
-            id="flush-collapseFive"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Digital marketing encompasses various strategies to promote your
               advertising. Effective digital marketing helps increase your
@@ -665,22 +525,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSix"
-              aria-expanded="false"
-              aria-controls="flush-collapseSix"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
               6. How long does it take to develop a website?
             </button>
           </h2>
-          <div
-            id="flush-collapseSix"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               The timeline for website development varies based on the
               complexity and scope of the project. On average, a standard
@@ -691,23 +541,13 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSeven"
-              aria-expanded="false"
-              aria-controls="flush-collapseSeven"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
               7. Can you assit with app development for both Android and iOS
               platforms?
             </button>
           </h2>
-          <div
-            id="flush-collapseSeven"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Yes, we offer mobile app development services for both Android and
               iOS platforms. Our team develops high - quality, user-friendly
@@ -718,23 +558,13 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header lh-normal">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseEight"
-              aria-expanded="false"
-              aria-controls="flush-collapseEight"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
               8. What sets Macreel Infosoft apart from other IT service
               provider?
             </button>
           </h2>
-          <div
-            id="flush-collapseEight"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
+          <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               Placeholder content for this accordion, which is intended to
               demonstrate the <code>.accordion-flush</code> class. This is the
@@ -746,7 +576,7 @@
       </div>
     </div>
     <div class="image_area">
-      <img src="assets/webdesign.gif" alt="Website Designing" title="Website Designing" />
+      <img src="../../../assets/webdesign.gif" alt="Website Designing" title="Website Designing" />
     </div>
   </div>
   <!-- frequently asked question code end here  -->
@@ -769,11 +599,7 @@
     <div class="team_card_area">
       <div class="team_card">
         <div class="profile_img">
-          <img
-            src="assets/team-1.jpg"
-            alt="Macreel Infosoft Chairman"
-            title="NR Tyagi Mareel Infosoft Chairman"
-          />
+          <img src="../../../assets/team-1.jpg" alt="Macreel Infosoft Chairman" title="NR Tyagi Mareel Infosoft Chairman" />
         </div>
         <div class="details">
           <h6>NR Tyagi</h6>
@@ -783,11 +609,7 @@
       </div>
       <div class="team_card">
         <div class="profile_img">
-          <img
-            src="assets/team-2.jpg"
-            alt="Director of Macreel Infosoft Manish Tyagi"
-            title="Manish Tyagi"
-          />
+          <img src="../../../assets/team-2.jpg" alt="Director of Macreel Infosoft Manish Tyagi" title="Manish Tyagi" />
         </div>
         <div class="details">
           <h6>Manish Tyagi</h6>
@@ -798,11 +620,7 @@
 
       <div class="team_card">
         <div class="profile_img">
-          <img
-            src="assets/priyankas.jpeg"
-            alt="Priyanka Maindolia"
-            title="Priyanka Maindolia"
-          />
+          <img src="assets/priyankas.jpeg" alt="Priyanka Maindolia" title="Priyanka Maindolia" />
         </div>
         <div class="details">
           <h6>Priyanka Maindolia</h6>
@@ -812,7 +630,7 @@
       </div>
       <div class="team_card">
         <div class="profile_img">
-          <img src="assets/team-3.jpg" alt="Himanshu Gupta" title="Himanshu Gupta"/>
+          <img src="assets/team-3.jpg" alt="Himanshu Gupta" title="Himanshu Gupta" />
         </div>
         <div class="details">
           <h6>Himanhsu Gupta</h6>
@@ -839,67 +657,61 @@
       </h4>
     </div>
     <div class="sliding_area">
-      <swiper
-        [slidesPerView]="3"
-        [spaceBetween]="10"
-        [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-        [loop]="true"
-        [breakpoints]="breaksPointts"
-        class="custom-swiper"
-      >
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPointts" class="custom-swiper">
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/angular.png" alt="Angular" title="Angular" />
+            <img src="../../../assets/angular.png" alt="Angular" title="Angular" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/mysql-img.png" alt="MySql" title="MySql" />
+            <img src="../../../assets/mysql-img.png" alt="MySql" title="MySql" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/html.png" alt="HTML" title="HTMl" />
+            <img src="../../../assets/html.png" alt="HTML" title="HTMl" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/css-img.png" alt="CSS" title="Image"/>
+            <img src="../../../assets/css-img.png" alt="CSS" title="Image" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/javascript.png" alt="javaScript" title="JavaScript" />
+            <img src="../../../assets/javascript.png" alt="javaScript" title="JavaScript" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/bootstrap.png" alt="Bootstrap" title="Bootstrap"/>
+            <img src="../../../assets/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/react.png" alt="React" title="React" />
+            <img src="../../../assets/react.png" alt="React" title="React" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/python.png" alt="Python" title="Python" />
+            <img src="../../../assets/python.png" alt="Python" title="Python" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/typescript.png" alt="Typescript" title="TypeScript"/>
+            <img src="../../../assets/typescript.png" alt="Typescript" title="TypeScript" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/xcode-img.png" alt="Xcode" title="Xcode" />
+            <img src="../../../assets/xcode-img.png" alt="Xcode" title="Xcode" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/ionic.png" alt="Ionic" title="Ionic" />
+            <img src="../../../assets/ionic.png" alt="Ionic" title="Ionic" />
           </div>
         </ng-template>
       </swiper>
@@ -921,87 +733,68 @@
       </h4>
     </div>
     <div class="slide_portfolio">
-      <swiper
-        [slidesPerView]="3"
-        [spaceBetween]="10"
-        [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-        [loop]="true"
-        [breakpoints]="breaksPointtss"
-        class="custom-swiper"
-      >
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPointtss" class="custom-swiper">
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="assets/turningbrain.png" alt="Turning Brain Website" title="Turning Brain"/>
+            <img src="../../../assets/turningbrain.jpg" alt="Turning Brain Website" title="Turning Brain" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal1">
-            <img
-              src="assets/scert-up.png"
-              alt="State Council of Educational Research & Traning"
-              title="State Council of Educational Research & Traning"
-            />
+            <img src="../../../assets/scert-up.png" alt="State Council of Educational Research & Traning"
+              title="State Council of Educational Research & Traning" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            <img src="assets/delhitaxiservice.png" alt="Delhi Taxi Service" title="Delhi Taxi Service"/>
+            <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi Taxi Service" title="Delhi Taxi Service" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal3">
-            <img src="assets/heerafacility.png" alt="Heera Website" title="Heera Website"/>
+            <img src="../../../assets/heerafacility.png" alt="Heera Website" title="Heera Website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModals">
+            <img src="../../../assets/servaassociates.jpg" alt="Heera Website" title="Heera Website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal4">
-            <img src="assets/granlighting.png" alt="Grain lighting website" title="Grain lighting website"/>
+            <img src="../../../assets/granlighting.jpg" alt="Grain lighting website" title="Grain lighting website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal5">
-            <img
-              src="assets/tajmahaldaytours.png"
-              alt="Taj Mahal Tours website"
-              title="Taj Mahal Tours website"
-            />
+            <img src="../../../assets/tajmahaldaytours.png" alt="Taj Mahal Tours website" title="Taj Mahal Tours website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal6">
-            <img src="assets/thedivinedentalcentre.png" alt="Divine Website" title="Divine Website"/>
+            <img src="../../../assets/thedivinedentalcentre.jpg" alt="Divine Website" title="Divine Website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal7">
-            <img
-              src="assets/allianceworldschool.png"
-              alt="Alliance World School"
-              title="Alliance World School"
-            />
+            <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School" title="Alliance World School" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal8">
-            <img
-              src="assets/delhicityschool.png"
-              alt="Delhi City School Website"
-              title="Delhi City School Website"
-            />
+            <img src="../../../assets/delhicityschool.jpg" alt="Delhi City School Website" title="Delhi City School Website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal9">
-            <img src="assets/saikarunadham.png" alt="Sai karuna dham website" title="Sai karuna dham website"/>
+            <img src="../../../assets/saikarunadham.png" alt="Sai karuna dham website" title="Sai karuna dham website" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal1s">
-            <img
-              src="assets/delhicityschool.in_Science-Tech.png"
-              alt="Alliance World School"
-              title="Alliance World School"
-            />
+            <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Alliance World School"
+              title="Alliance World School" />
           </button>
         </ng-template>
       </swiper>
@@ -1021,112 +814,106 @@
       </h4>
     </div>
     <div class="icon_slide">
-      <swiper
-        [slidesPerView]="8"
-        [spaceBetween]="10"
-        [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-        [loop]="true"
-        class="custom-swiper"
-        [breakpoints]="breaksPoints"
-      >
+      <swiper [slidesPerView]="8" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" class="custom-swiper" [breakpoints]="breaksPoints">
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/airtel.webp" alt="Airtel" title="Airtel"/>
+            <img src="../../../assets/airtel.webp" alt="Airtel" title="Airtel" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/cambridge-logo.webp" alt="Cambridge School" title="Cambridge School"/>
+            <img src="../../../assets/cambridge-logo.webp" alt="Cambridge School" title="Cambridge School" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/dcs-logo.webp" alt="DCS" title="DCS"/>
+            <img src="../../../assets/dcs-logo.webp" alt="DCS" title="DCS" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/divine.webp" alt="Divine" title="Divine"/>
+            <img src="../../../assets/divine.webp" alt="Divine" title="Divine" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/eduaffair.png" alt="Eduaffair" title="Eduaffair"/>
+            <img src="../../../assets/eduaffair.png" alt="Eduaffair" title="Eduaffair" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/gov-of-india-logo.webp" alt="Govt. of India" title="Govt. of India"/>
+            <img src="../../../assets/gov-of-india-logo.webp" alt="Govt. of India" title="Govt. of India" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/grain-lighting.png" alt="Grain Lighting" title="Grain Lighting"/>
+            <img src="../../../assets/grain-lighting.png" alt="Grain Lighting" title="Grain Lighting" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/greenfield.png" alt="Green Field" title="Green Field"/>
+            <img src="../../../assets/greenfield.png" alt="Green Field" title="Green Field" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/heeragroup.jpeg" alt="Heera group" title="Heera group"/>
+            <img src="../../../assets/heeragroup.jpeg" alt="Heera group" title="Heera group" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/khd.webp" alt="KHD" title="KHD"/>
+            <img src="../../../assets/khd.webp" alt="KHD" title="KHD" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/kisanmandi.svg" alt="kisanmandi" title="kisanmandi"/>
+            <img src="../../../assets/kisanmandi.svg" alt="kisanmandi" title="kisanmandi" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/matlinehouse.jpeg" alt="matline house" title="matline house"/>
+            <img src="../../../assets/matlinehouse.jpeg" alt="matline house" title="matline house" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/myjyotishg.jpeg" alt="MyJyothish" title="MyJyothish"/>
+            <img src="../../../assets/myjyotishg.jpeg" alt="MyJyothish" title="MyJyothish" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/scert-up-logo.webp" alt="SECRET UP" title="SECRET UP" />
+            <img src="../../../assets/scert-up-logo.webp" alt="SECRET UP" title="SECRET UP" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/serva.jpeg" alt="SEVA" title="SEVA"/>
+            <img src="../../../assets/serva.jpeg" alt="SEVA" title="SEVA" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/stainlay-india.png" alt="Stainlay india" title="Stainlay india"/>
+            <img src="../../../assets/stainlay-india.png" alt="Stainlay india" title="Stainlay india" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/training-brain.png" alt="turning brain" title="turning brain"/>
+            <img src="../../../assets/training-brain.png" alt="turning brain" title="turning brain" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/up-logo.webp" alt="Government of Uttar pradesh" title="Government of Uttar pradesh"/>
+            <img src="../../../assets/up-logo.webp" alt="Government of Uttar pradesh" title="Government of Uttar pradesh" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/vakil-uncle.png" alt="Vakil uncle" title="Vakil uncle"/>
+            <img src="../../../assets/vakil-uncle.png" alt="Vakil uncle" title="Vakil uncle" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="assets/wood-group.webp" alt="Wood group" title="Wood group"/>
+            <img src="../../../assets/wood-group.webp" alt="Wood group" title="Wood group" />
           </div>
         </ng-template>
 
@@ -1141,24 +928,13 @@
     </div>
 
     <div class="review_area">
-      <swiper
-        [slidesPerView]="3"
-        [spaceBetween]="12"
-        [autoplay]="{ delay: 4000, disableOnInteraction: false }"
-        [loop]="true"
-        [breakpoints]="breaksPoint"
-        class="custom-swiper"
-      >
+      <swiper [slidesPerView]="3" [spaceBetween]="12" [autoplay]="{ delay: 4000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPoint" class="custom-swiper">
         <ng-template swiperSlide>
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Nishank Kumar.webp"
-                  alt="Nishank Kumar"
-                  title="Nishank Kumar"
-                />
+                <img class="profile-img" src="../../../assets/Nishank Kumar.webp" alt="Nishank Kumar" title="Nishank Kumar" />
               </div>
               <p class="testimonial-text">
                 We've been working together with Macreel Infosoft Pvt Ltd for
@@ -1183,12 +959,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Nitin jain.webp"
-                  alt="Nitin jain"
-                  title="Nitin Jain"
-                />
+                <img class="profile-img" src="../../../assets/Nitin jain.webp" alt="Nitin jain" title="Nitin Jain" />
               </div>
               <p class="testimonial-text">
                 The Macreel Infosoft team is excellent in their knowledge and
@@ -1213,12 +984,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Vilson.webp"
-                  alt="Vilson Masih"
-                  title="Vilson Masih"
-                />
+                <img class="profile-img" src="../../../assets/Vilson.webp" alt="Vilson Masih" title="Vilson Masih" />
               </div>
               <p class="testimonial-text">
                 Outstanding digital marketing services! Effective strategies
@@ -1244,12 +1010,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Dr. Rajkapoor.webp"
-                  alt="Dr. Rajkapoor"
-                  title="Dr. Rajkapoor"
-                />
+                <img class="profile-img" src="../../../assets/Dr. Rajkapoor.webp" alt="Dr. Rajkapoor" title="Dr. Rajkapoor" />
               </div>
               <p class="testimonial-text">
                 I have been involved in website design and development for our
@@ -1276,12 +1037,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Gaurav Thakral.webp"
-                  alt="Gaurav Thakral"
-                  title="Gaurav Thakral"
-                />
+                <img class="profile-img" src="../../../assets/Gaurav Thakral.webp" alt="Gaurav Thakral" title="Gaurav Thakral" />
               </div>
               <p class="testimonial-text">
                 Macreel crafted software for us. They propel our project forward
@@ -1306,12 +1062,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img
-                  class="profile-img"
-                  src="assets/Jitender.jpg"
-                  alt="Jitender"
-                  title="Jitender"
-                />
+                <img class="profile-img" src="../../../assets/Jitender.jpg" alt="Jitender" title="Jitender" />
               </div>
               <p class="testimonial-text">
                 Very professional and talented developers. I am impressed by
@@ -1339,17 +1090,11 @@
 
 <!-- models -->
 
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/turningbrain.png" alt="Turning Brain" title="Turning Brain" width="100%" />
+        <img src="../../../assets/turningbrain.jpg" alt="Turning Brain" title="Turning Brain" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary">Close</button>
@@ -1357,17 +1102,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal1"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/scert-up.png" alt="SCERT Up" title="SCERT UP" width="100%" />
+        <img src="../../../assets/scert-up.png" alt="SCERT Up" title="SCERT UP" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1378,17 +1117,11 @@
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="exampleModal2"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/delhitaxiservice.png" alt="Delhi tax service" title="Delhi Tax Service" width="100%" />
+        <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi tax service" title="Delhi Tax Service" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1398,17 +1131,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal3"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/heerafacility.png" alt="Heera Facility" title="Heera Facility" width="100%" />
+        <img src="../../../assets/servaassociates.jpg" alt="Serva Associate" title="Serva Associate" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1418,17 +1145,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal4"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/granlighting.png" alt="Grain lighting" title="Grain Lighting" width="100%" />
+        <img src="../../../assets/granlighting.jpg" alt="Grain lighting" title="Grain Lighting" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1438,17 +1159,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal5"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/tajmahaldaytours.png" alt="Taj mahal days Tours" title="Taj mahal days Tours" width="100%" />
+        <img src="../../../assets/tajmahaldaytours.png" alt="Taj mahal days Tours" title="Taj mahal days Tours" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1458,17 +1173,12 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal6"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/thedivinedentalcentre.png" alt="The Divine Dental Centre" title="The Divine Dental Centre" width="100%" />
+        <img src="../../../assets/thedivinedentalcentre.jpg" alt="The Divine Dental Centre" title="The Divine Dental Centre"
+          width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1478,17 +1188,12 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal7"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/allianceworldschool.png" alt="Alliance World School" title="Alliance World School" width="100%" />
+        <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School" title="Alliance World School"
+          width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1498,17 +1203,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal8"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/delhicityschool.png" alt="Delhi city school" title="Delhi City School" width="100%" />
+        <img src="../../../assets/delhicityschool.jpg" alt="Delhi city school" title="Delhi City School" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1518,17 +1217,11 @@
     </div>
   </div>
 </div>
-<div
-  class="modal fade"
-  id="exampleModal9"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="assets/saikarunadham.png" alt="Sai Karuna Dham" title="Sai Karuna Dham" width="100%" />
+        <img src="../../../assets/saikarunadham.png" alt="Sai Karuna Dham" title="Sai Karuna Dham" width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1539,22 +1232,12 @@
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="exampleModal1s"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal1s" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img
-          src="assets/delhicityschool.in_Science-Tech.png"
-          alt="Delhi City School"
-          title="Delhi City School"
-          width="100%"
-        />
+        <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Delhi City School" title="Delhi City School"
+          width="100%" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">

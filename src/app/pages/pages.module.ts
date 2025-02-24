@@ -14,6 +14,7 @@ import { MatButton, MatButtonModule } from '@angular/material/button';
 import { SwiperModule } from 'swiper/angular';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     PagesRoutingModule,
     MatIconModule,
     MatButtonModule,
-    SwiperModule
+    SwiperModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

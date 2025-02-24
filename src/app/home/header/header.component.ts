@@ -10,6 +10,7 @@ export class HeaderComponent {
   constructor(private router: Router) {}
 
   navigateTo(path: string) {
+    debugger
     this.router.navigate([path]);
     scroll(0, 0);
   }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
+import { ServicesService } from 'src/app/services.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,14 +9,15 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  name: string = '';
-  email: string = '';
-  phone: string = '';
-  project: string = '';
-  subject: string = '';
-  message: string = '';
+  contactForm!: FormGroup;
 
-  constructor(private _meta: Meta, private _title: Title) {
+
+  constructor(
+    private _meta: Meta,
+    private _title: Title,
+    private fb: FormBuilder,
+    private services: ServicesService
+  ) {
     this._title.setTitle(
       'Macreel Infosoft - Contact Us | Best IT Solution Company'
     );
@@ -39,18 +42,32 @@ export class ContactComponent {
       { name: 'reply-to', content: 'sales@macreel.co.in' },
       { name: 'coverage', content: 'Worldwide' },
     ]);
+
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', Validators.required],
+      subject: ['', Validators.required],
+      service: ['', Validators.required],
+    });
   }
 
-  onSubmit() {
-    // Example of form submission handling
-    console.log('Form Data:', {
-      name: this.name,
-      email: this.email,
-      phone: this.phone,
-      project: this.project,
-      subject: this.subject,
-      message: this.message,
-    });
-    alert('Message sent successfully!');
+  sendContact() {
+    if (this.contactForm.valid) {
+      this.services.sendContactDetails(this.contactForm.value).subscribe(
+        (res) => {
+          this.services.ToastSuccess('Thanks for reaching out! We’ve received your enquiry and will get in touch with you shortly.');
+          this.contactForm.reset()
+        },
+        (err: Error) => {
+          this.services.ToastDanger('Message could not be sent.');
+        }
+      )
+    }
+    else {
+      this.services.ToastWarning('Please Fill All The Required Fields');
+    }
+
   }
+
 }
