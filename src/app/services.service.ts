@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ServicesService {
 
-  baseUrl: string = 'https://macreel.co.in/mail/'
+  baseUrl: string = 'https://vidyaarthee.com/mail/'
 
   constructor(
     private http: HttpClient,
